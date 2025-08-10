@@ -8,6 +8,7 @@ from data.imagenet_c import get_imagenet_c_loader
 from models.vit import get_vit
 from models.resnet import get_resnet
 from utils.metrics import accuracy
+from datetime import datetime
 
 def test_single_model_accuracy():
     parser = argparse.ArgumentParser(description='Single Model Accuracy Test')
