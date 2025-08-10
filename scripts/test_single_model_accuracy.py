@@ -40,7 +40,8 @@ def test_single_model_accuracy():
     severities = [5] # exclusively test severity 5
 
     os.makedirs('results', exist_ok=True)
-    result_fname = f"results/{model_config['name']}_single_model_accuracy.txt"
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    result_fname = f"results/{model_config['name']}_{timestamp}_single_model_accuracy.txt"
 
     category_accuracies = {cat: [] for cat in corruption_categories.keys()}
 
