@@ -8,6 +8,7 @@ from data.imagenet_c import get_imagenet_c_loader
 from models.vit import get_vit
 from models.resnet import get_resnet
 from utils.metrics import accuracy
+from datetime import datetime
 
 def test_single_model_accuracy():
     parser = argparse.ArgumentParser(description='Single Model Accuracy Test')
@@ -40,7 +41,8 @@ def test_single_model_accuracy():
     severities = [5] # exclusively test severity 5
 
     os.makedirs('results', exist_ok=True)
-    result_fname = f"results/{model_config['name']}_single_model_accuracy.txt"
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    result_fname = f"results/{model_config['name']}_{timestamp}_single_model_accuracy.txt"
 
     category_accuracies = {cat: [] for cat in corruption_categories.keys()}
 
