@@ -1,0 +1,22 @@
+model:
+  large_model:
+    name: 'vit_base_patch16_224'
+    pretrained: True
+    lr: 0.001
+  small_model:
+    name: 'resnet50'
+    pretrained: True
+    lr: 0.00025
+
+dataset:
+  name: 'ImageNet-C'
+  path: './data/ImageNet-C'
+  batch_size: 64
+
+optimizer:
+  name: 'Adam'
+  # lr: 0.001
+
+coca:
+  lambda_co_adaptation: 1.0
+  lambda_self_adaptation: 1.0 
