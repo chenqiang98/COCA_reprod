@@ -1,0 +1,33 @@
+{
+    "timestamp": "20250813_021548",
+    "models": {
+        "anchor": "resnet50",
+        "auxiliary": "resnet18"
+    },
+    "dataset": "ImageNet-C",
+    "severity": 5,
+    "hyperparameters": {
+        "lr_anchor": 0.00025,
+        "lr_aux": 0.00025,
+        "momentum": 0.9,
+        "batch_size": 64
+    },
+    "results": {
+        "gaussian_noise": "21.01%",
+        "zoom_blur": "36.65%",
+        "defocus_blur": "19.71%",
+        "jpeg_compression": "39.04%",
+        "impulse_noise": "23.07%",
+        "pixelate": "43.06%",
+        "snow": "36.64%",
+        "frost": "25.60%",
+        "glass_blur": "18.00%",
+        "contrast": "2.18%",
+        "fog": "42.21%",
+        "motion_blur": "33.64%",
+        "elastic_transform": "41.40%",
+        "shot_noise": "23.86%",
+        "brightness": "48.14%"
+    },
+    "average_accuracy": "30.28%"
+}
