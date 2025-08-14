@@ -32,14 +32,14 @@ class COCA(nn.Module):
             include_instancenorm=include_instancenorm,
     )
 
-    # Setup optimizers for normalization layers
-    self.optimizer_anchor = self.setup_optimizer(self.anchor_model, lr_anchor, momentum)
-    self.optimizer_aux = self.setup_optimizer(self.aux_model, lr_aux, momentum)
+        # Setup optimizers for normalization layers
+        self.optimizer_anchor = self.setup_optimizer(self.anchor_model, lr_anchor, momentum)
+        self.optimizer_aux = self.setup_optimizer(self.aux_model, lr_aux, momentum)
 
     # Learnable scaling factor tau
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    self.tau = nn.Parameter(torch.ones(1, requires_grad=True, device=device))
-    self.optimizer_tau = optim.SGD([self.tau], lr=0.01, momentum=momentum)
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        self.tau = nn.Parameter(torch.ones(1, requires_grad=True, device=device))
+        self.optimizer_tau = optim.SGD([self.tau], lr=0.01, momentum=momentum)
 
     def setup_optimizer(self, model, lr, momentum):
         # collect all trainable normalization layer parameters
