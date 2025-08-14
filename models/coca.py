@@ -30,15 +30,16 @@ class COCA(nn.Module):
             include_layernorm=include_layernorm,
             include_groupnorm=include_groupnorm,
             include_instancenorm=include_instancenorm,
-        )
+    )
 
-        # Setup optimizers for normalization layers
-        self.optimizer_anchor = self.setup_optimizer(self.anchor_model, lr_anchor, momentum)
-        self.optimizer_aux = self.setup_optimizer(self.aux_model, lr_aux, momentum)
+    # Setup optimizers for normalization layers
+    self.optimizer_anchor = self.setup_optimizer(self.anchor_model, lr_anchor, momentum)
+    self.optimizer_aux = self.setup_optimizer(self.aux_model, lr_aux, momentum)
 
-        # Learnable scaling factor tau
-        self.tau = nn.Parameter(torch.ones(1, requires_grad=True, device="cuda" if torch.cuda.is_available() else "cpu"))
-        self.optimizer_tau = optim.SGD([self.tau], lr=0.01, momentum=momentum)
+    # Learnable scaling factor tau
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    self.tau = nn.Parameter(torch.ones(1, requires_grad=True, device=device))
+    self.optimizer_tau = optim.SGD([self.tau], lr=0.01, momentum=momentum)
 
     def setup_optimizer(self, model, lr, momentum):
         # collect all trainable normalization layer parameters
@@ -63,8 +64,8 @@ class COCA(nn.Module):
 
         # check existence of normalization layer parameters
         if not norm_params:
-            # No norm layers selected; create a dummy optimizer on no params to avoid crash
-            return optim.SGD([], lr=lr, momentum=momentum)
+            # No norm parameters to adapt for this model
+            return None
 
         # make sure normalization layer parameters are on the right device
         device = next(model.parameters()).device
@@ -125,11 +126,15 @@ class COCA(nn.Module):
         loss = l_mar + l_ckd + l_sa
 
         # Update models
-        self.optimizer_anchor.zero_grad()
-        self.optimizer_aux.zero_grad()
+        if self.optimizer_anchor is not None:
+            self.optimizer_anchor.zero_grad()
+        if self.optimizer_aux is not None:
+            self.optimizer_aux.zero_grad()
         loss.backward()
-        self.optimizer_anchor.step()
-        self.optimizer_aux.step()
+        if self.optimizer_anchor is not None:
+            self.optimizer_anchor.step()
+        if self.optimizer_aux is not None:
+            self.optimizer_aux.step()
 
     def entropy_loss(self, logits):
         p = F.softmax(logits, dim=1)
