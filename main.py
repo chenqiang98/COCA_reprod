@@ -14,7 +14,7 @@ from utils.augmentations import get_transform
 
 def main():
     parser = argparse.ArgumentParser(description='COCA Test-Time Adaptation')
-    parser.add_argument('--config', type=str, default='configs/resnet50_vit_base.yaml', help='Path to config file')
+    parser.add_argument('--config', type=str, default='configs/vit_base_resnet50.yaml', help='Path to config file')
     parser.add_argument('--data_root', type=str, default=None, help='Path to ImageNet-C dataset')
     parser.add_argument('--batch_size', type=int, default=None, help='Batch size for training and testing')
     parser.add_argument('--workers', type=int, default=4, help='Number of data loading workers')
@@ -34,14 +34,31 @@ def main():
         args.batch_size = config['dataset']['batch_size']
     
     if args.corruption == 'all':
-        # ImageNet-C top-level has categories: noise, blur, weather, digital; subfolders hold corruptions
-        possible_roots = [d for d in os.listdir(args.data_root) if os.path.isdir(os.path.join(args.data_root, d))]
-        corruption_types = []
-        for cat in possible_roots:
-            cat_dir = os.path.join(args.data_root, cat)
-            for corr in os.listdir(cat_dir):
-                if os.path.isdir(os.path.join(cat_dir, corr)):
-                    corruption_types.append(os.path.join(cat, corr))
+        # Support two ImageNet-C layouts
+        # 1) Category layout: <root>/noise/gaussian_noise/5
+        # 2) Flat layout:     <root>/gaussian_noise/5
+        top_dirs = [d for d in os.listdir(args.data_root) if os.path.isdir(os.path.join(args.data_root, d))]
+        known_cats = {'noise', 'blur', 'weather', 'digital'}
+        # list of known corruption names from the paper
+        known_corrs = {
+            'gaussian_noise', 'shot_noise', 'impulse_noise',
+            'defocus_blur', 'glass_blur', 'motion_blur', 'zoom_blur',
+            'snow', 'frost', 'fog', 'brightness',
+            'contrast', 'elastic_transform', 'pixelate', 'jpeg_compression'
+        }
+        # Detect category layout
+        if any(d in known_cats for d in top_dirs):
+            corruption_types = []
+            for cat in sorted(top_dirs):
+                if cat not in known_cats:
+                    continue
+                cat_dir = os.path.join(args.data_root, cat)
+                for corr in sorted(os.listdir(cat_dir)):
+                    if corr in known_corrs and os.path.isdir(os.path.join(cat_dir, corr)):
+                        corruption_types.append(os.path.join(cat, corr))
+        else:
+            # Flat layout: use top-level dirs that match known corruptions
+            corruption_types = [d for d in sorted(top_dirs) if d in known_corrs]
     else:
         # Allow either plain corruption name or nested category/corruption
         if os.path.sep in args.corruption:
@@ -59,8 +76,8 @@ def main():
     results = {}
     for corruption_type in corruption_types:
         print(f"--- Testing corruption: {corruption_type} severity: {args.severity} ---")
-    metrics = run_test(args, config, corruption_type)
-    results[corruption_type] = metrics
+        metrics = run_test(args, config, corruption_type)
+        results[corruption_type] = metrics
 
     save_results(args, config, results)
 

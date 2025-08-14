@@ -10,7 +10,7 @@ model:
 
 dataset:
   name: 'ImageNet-C'
-  path: './data/Tiny-ImageNet-C'  # Change to full ImageNet-C if available: ./data/ImageNet-C
+  path: './data/ImageNet-C'  # Path to full ImageNet-C
   batch_size: 64
 
 optimizer:
