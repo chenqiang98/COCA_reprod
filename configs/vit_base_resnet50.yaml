@@ -10,13 +10,18 @@ model:
 
 dataset:
   name: 'ImageNet-C'
-  path: './data/ImageNet-C'
+  path: './data/Tiny-ImageNet-C'  # Change to full ImageNet-C if available: ./data/ImageNet-C
   batch_size: 64
 
 optimizer:
-  name: 'Adam'
-  # lr: 0.001
+  name: 'SGD'  # Paper uses SGD with momentum 0.9
+  # lr configured per model above
 
 coca:
   lambda_co_adaptation: 1.0
   lambda_self_adaptation: 1.0 
+  # Norm layers to adapt (Tent uses BN-only). Set include_layernorm=true to adapt ViT LNs.
+  include_batchnorm: true
+  include_layernorm: true
+  include_groupnorm: false
+  include_instancenorm: false

@@ -34,15 +34,33 @@ def main():
         args.batch_size = config['dataset']['batch_size']
     
     if args.corruption == 'all':
-        corruption_types = [d for d in os.listdir(args.data_root) if os.path.isdir(os.path.join(args.data_root, d))]
+        # ImageNet-C top-level has categories: noise, blur, weather, digital; subfolders hold corruptions
+        possible_roots = [d for d in os.listdir(args.data_root) if os.path.isdir(os.path.join(args.data_root, d))]
+        corruption_types = []
+        for cat in possible_roots:
+            cat_dir = os.path.join(args.data_root, cat)
+            for corr in os.listdir(cat_dir):
+                if os.path.isdir(os.path.join(cat_dir, corr)):
+                    corruption_types.append(os.path.join(cat, corr))
     else:
-        corruption_types = [args.corruption]
+        # Allow either plain corruption name or nested category/corruption
+        if os.path.sep in args.corruption:
+            corruption_types = [args.corruption]
+        else:
+            # Try to find category folder containing this corruption
+            found = None
+            for cat in os.listdir(args.data_root):
+                cat_dir = os.path.join(args.data_root, cat)
+                if os.path.isdir(os.path.join(cat_dir, args.corruption)):
+                    found = os.path.join(cat, args.corruption)
+                    break
+            corruption_types = [found or args.corruption]
 
     results = {}
     for corruption_type in corruption_types:
         print(f"--- Testing corruption: {corruption_type} severity: {args.severity} ---")
-        accuracy = run_test(args, config, corruption_type)
-        results[corruption_type] = accuracy
+    metrics = run_test(args, config, corruption_type)
+    results[corruption_type] = metrics
 
     save_results(args, config, results)
 
@@ -60,14 +78,32 @@ def run_test(args, config, corruption_type):
     aux_model = get_model(aux_model_name, pretrained=aux_model_config['pretrained'])
 
     # Setup COCA
-    coca = COCA(anchor_model, aux_model, lr_anchor=lr_anchor, lr_aux=lr_aux, momentum=args.momentum)
+    # Norm adaptation config (follow Tent: BN-only by default; allow LayerNorm for ViTs if enabled)
+    coca_cfg = config.get('coca', {})
+    include_bn = coca_cfg.get('include_batchnorm', True)
+    include_ln = coca_cfg.get('include_layernorm', False)
+    include_gn = coca_cfg.get('include_groupnorm', False)
+    include_in = coca_cfg.get('include_instancenorm', False)
+
+    coca = COCA(
+        anchor_model,
+        aux_model,
+        lr_anchor=lr_anchor,
+        lr_aux=lr_aux,
+        momentum=args.momentum,
+        include_batchnorm=include_bn,
+        include_layernorm=include_ln,
+        include_groupnorm=include_gn,
+        include_instancenorm=include_in,
+    )
 
     # Data loading
     transform_anchor = get_transform(anchor_model_name)
     transform_aux = get_transform(aux_model_name)
     
-    dataset = ImageNetC(root=args.data_root, corruption_type=corruption_type, severity=args.severity, transform_anchor=transform_anchor, transform_aux=transform_aux)
-    data_loader = torch.utils.data.DataLoader(dataset, batch_size=args.batch_size, num_workers=args.workers, shuffle=True)
+    dataset = ImageNetC(root=args.data_root, corruption_type=corruption_type, severity=args.severity,
+                        transform_anchor=transform_anchor, transform_aux=transform_aux)
+    data_loader = torch.utils.data.DataLoader(dataset, batch_size=args.batch_size, num_workers=args.workers, shuffle=False)
 
     # Training loop (Test-Time Adaptation)
     for images_anchor, images_aux, _ in tqdm(data_loader, desc=f"Adapting on {corruption_type}", leave=False):
@@ -78,9 +114,10 @@ def run_test(args, config, corruption_type):
         coca.update(images_anchor, images_aux)
 
     # Evaluation
-    accuracy = test_accuracy(coca, args.data_root, args.batch_size, args.workers, corruption_type, args.severity, anchor_model_name=anchor_model_name, aux_model_name=aux_model_name)
-    print(f'Accuracy on {corruption_type} (severity {args.severity}): {accuracy:.2f}%')
-    return accuracy
+    accs = test_accuracy(coca, args.data_root, args.batch_size, args.workers, corruption_type, args.severity,
+                         anchor_model_name=anchor_model_name, aux_model_name=aux_model_name)
+    print(f"Accuracies on {corruption_type} (sev {args.severity}) -> anchor: {accs['anchor']:.2f}% | aux: {accs['aux']:.2f}% | combined: {accs['combined']:.2f}%")
+    return accs
 
 def save_results(args, config, results):
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
@@ -107,12 +144,17 @@ def save_results(args, config, results):
             'momentum': args.momentum,
             'batch_size': args.batch_size,
         },
-        'results': {corr: f"{acc:.2f}%" for corr, acc in results.items()}
+        'results': {corr: {k: f"{v:.2f}%" for k, v in metrics.items()} for corr, metrics in results.items()}
     }
 
     if len(results) > 1:
-        avg_accuracy = sum(results.values()) / len(results)
-        result_data['average_accuracy'] = f"{avg_accuracy:.2f}%"
+        # compute averages across corruptions
+        sums = {'anchor': 0.0, 'aux': 0.0, 'combined': 0.0}
+        for metrics in results.values():
+            for k in sums:
+                sums[k] += metrics[k]
+        avgs = {k: f"{(sums[k] / max(len(results),1)):.2f}%" for k in sums}
+        result_data['average_accuracy'] = avgs
         corruption_name = "all_corruptions"
     else:
         corruption_name = args.corruption

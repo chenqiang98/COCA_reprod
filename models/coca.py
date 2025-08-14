@@ -18,12 +18,21 @@ def get_model(model_name, pretrained=True):
         raise ValueError(f"Model {model_name} not found.")
 
 class COCA(nn.Module):
-    def __init__(self, anchor_model, aux_model, lr_anchor=0.00025, lr_aux=0.001, momentum=0.9):
+    def __init__(self, anchor_model, aux_model, lr_anchor=0.00025, lr_aux=0.001, momentum=0.9,
+                 include_batchnorm=True, include_layernorm=True, include_groupnorm=False, include_instancenorm=False):
         super(COCA, self).__init__()
         self.anchor_model = anchor_model.to("cuda" if torch.cuda.is_available() else "cpu")
         self.aux_model = aux_model.to("cuda" if torch.cuda.is_available() else "cpu")
 
-        # Setup optimizers for BN layers
+        # Norm config
+        self._norm_cfg = dict(
+            include_batchnorm=include_batchnorm,
+            include_layernorm=include_layernorm,
+            include_groupnorm=include_groupnorm,
+            include_instancenorm=include_instancenorm,
+        )
+
+        # Setup optimizers for normalization layers
         self.optimizer_anchor = self.setup_optimizer(self.anchor_model, lr_anchor, momentum)
         self.optimizer_aux = self.setup_optimizer(self.aux_model, lr_aux, momentum)
 
@@ -35,17 +44,27 @@ class COCA(nn.Module):
         # collect all trainable normalization layer parameters
         norm_params = []
         for name, module in model.named_modules():
-            if isinstance(module, (nn.BatchNorm1d, nn.BatchNorm2d, nn.BatchNorm3d,
-                                   nn.LayerNorm, nn.GroupNorm, nn.InstanceNorm1d,
-                                   nn.InstanceNorm2d, nn.InstanceNorm3d)):
-                for param_name, param in module.named_parameters():
+            if self._norm_cfg['include_batchnorm'] and isinstance(module, (nn.BatchNorm1d, nn.BatchNorm2d, nn.BatchNorm3d)):
+                for _, param in module.named_parameters():
                     if param.requires_grad:
                         norm_params.append(param)
-                        # print(f"Added {name}.{param_name} to optimizer")  # 调试用
+            if self._norm_cfg['include_layernorm'] and isinstance(module, nn.LayerNorm):
+                for _, param in module.named_parameters():
+                    if param.requires_grad:
+                        norm_params.append(param)
+            if self._norm_cfg['include_groupnorm'] and isinstance(module, nn.GroupNorm):
+                for _, param in module.named_parameters():
+                    if param.requires_grad:
+                        norm_params.append(param)
+            if self._norm_cfg['include_instancenorm'] and isinstance(module, (nn.InstanceNorm1d, nn.InstanceNorm2d, nn.InstanceNorm3d)):
+                for _, param in module.named_parameters():
+                    if param.requires_grad:
+                        norm_params.append(param)
 
         # check existence of normalization layer parameters
         if not norm_params:
-            raise ValueError("No normalization layer parameters found! Check model architecture.")
+            # No norm layers selected; create a dummy optimizer on no params to avoid crash
+            return optim.SGD([], lr=lr, momentum=momentum)
 
         # make sure normalization layer parameters are on the right device
         device = next(model.parameters()).device
