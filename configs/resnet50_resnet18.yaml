@@ -13,10 +13,6 @@ dataset:
   path: './data/ImageNet-C'
   batch_size: 64
 
-optimizer:
-  name: 'Adam'
-  # lr: 0.001
-
 coca:
   lambda_co_adaptation: 1.0
   lambda_self_adaptation: 1.0 
