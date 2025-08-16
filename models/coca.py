@@ -38,7 +38,7 @@ class COCA(nn.Module):
 
     # Learnable scaling factor tau
         device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.tau = nn.Parameter(torch.ones(1, requires_grad=True, device=device))
+        self.tau = nn.Parameter(torch.tensor(1.0, requires_grad=True, device=device))
         self.optimizer_tau = optim.SGD([self.tau], lr=0.01, momentum=momentum)
 
     def setup_optimizer(self, model, lr, momentum):
@@ -83,29 +83,44 @@ class COCA(nn.Module):
         p_s = self.aux_model(x_aux)
         
         p_e_prime = p_a + (p_s / self.tau.detach())
-        T = torch.max(p_e_prime, dim=1, keepdim=True)[0] / torch.max(p_a, dim=1, keepdim=True)[0]
-        p_e = p_e_prime / T
+        
+        # Adaptive balance factor T with numerical stability
+        max_p_e_prime = torch.max(p_e_prime, dim=1, keepdim=True)[0]
+        max_p_a = torch.max(p_a, dim=1, keepdim=True)[0]
+        T = max_p_e_prime / torch.clamp(max_p_a, min=1e-8)
+        p_e = p_e_prime / torch.clamp(T, min=1e-8)
         
         return p_e
 
-    def update(self, x_anchor, x_aux):
+    def update(self, x_anchor, x_aux, debug=False):
+        # Ensure models are in training mode for adaptation
+        self.anchor_model.train()
+        self.aux_model.train()
+        
         # Forward pass
         p_a = self.anchor_model(x_anchor)
         p_s = self.aux_model(x_aux)
 
         # 1. Update tau
         self.optimizer_tau.zero_grad()
-        l_s = torch.norm(torch.exp(p_a.detach()) - torch.exp(p_s.detach() / self.tau), p=1)
+        l_s = torch.norm(torch.exp(p_a.detach()) - torch.exp(p_s / self.tau), p=1)
         l_s.backward()
         self.optimizer_tau.step()
         
-        # Clamp tau to be positive
-        self.tau.data.clamp_(min=1e-6)
+        # Clamp tau to be positive and reasonable range
+        self.tau.data.clamp_(min=0.1, max=10.0)
+        
+        if debug:
+            print(f"Tau: {self.tau.item():.4f}, L_s: {l_s.item():.4f}")
 
         # 2. Form ensemble prediction
         p_e_prime = p_a + (p_s / self.tau.detach())
-        T = torch.max(p_e_prime, dim=1, keepdim=True)[0].detach() / torch.max(p_a, dim=1, keepdim=True)[0].detach()
-        p_e = p_e_prime / T
+        
+        # Adaptive balance factor T with numerical stability
+        max_p_e_prime = torch.max(p_e_prime, dim=1, keepdim=True)[0].detach()
+        max_p_a = torch.max(p_a, dim=1, keepdim=True)[0].detach()
+        T = max_p_e_prime / torch.clamp(max_p_a, min=1e-8)
+        p_e = p_e_prime / torch.clamp(T, min=1e-8)
 
         # 3. Calculate losses
         # Marginal entropy loss

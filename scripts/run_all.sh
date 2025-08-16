@@ -7,4 +7,4 @@
 
 # python main.py --config configs/resnet50_resnet18.yaml --corruption all
 python main.py --config configs/vit_base_resnet50.yaml --corruption all
-python main.py --config configs/vit_base_mobilvit.yaml --corruption all
+# python main.py --config configs/vit_base_mobilvit.yaml --corruption all

@@ -46,8 +46,14 @@ def test_accuracy(model, data_root, batch_size, workers, corruption, severity, a
             aux_correct += (aux_pred == labels).sum().item()
 
             # combined: follow COCA forward logic with current tau
-            p_s /= model.tau.detach()
-            p_e = p_a + p_s
+            p_e_prime = p_a + p_s / model.tau.detach()
+            
+            # adaptive balance factor T with numerical stability
+            max_p_e_prime = torch.max(p_e_prime, dim=1, keepdim=True)[0]
+            max_p_a = torch.max(p_a, dim=1, keepdim=True)[0]
+            T = max_p_e_prime / torch.clamp(max_p_a, min=1e-8)
+            p_e = p_e_prime / torch.clamp(T, min=1e-8)
+
             comb_pred = p_e.argmax(dim=1)
             comb_correct += (comb_pred == labels).sum().item()
 

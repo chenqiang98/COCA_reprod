@@ -14,5 +14,8 @@ dataset:
   batch_size: 64
 
 coca:
-  lambda_co_adaptation: 1.0
-  lambda_self_adaptation: 1.0 
+  # Norm layers to adapt (Tent uses BN-only). Set include_layernorm=true to adapt ViT LNs.
+  include_batchnorm: true
+  include_layernorm: false
+  include_groupnorm: false
+  include_instancenorm: false 
