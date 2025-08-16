@@ -97,23 +97,17 @@ class COCA(nn.Module):
         self.anchor_model.train()
         self.aux_model.train()
         
+        # --- Main model update ---
+        if self.optimizer_anchor is not None:
+            self.optimizer_anchor.zero_grad()
+        if self.optimizer_aux is not None:
+            self.optimizer_aux.zero_grad()
+
         # Forward pass
         p_a = self.anchor_model(x_anchor)
         p_s = self.aux_model(x_aux)
 
-        # 1. Update tau
-        self.optimizer_tau.zero_grad()
-        l_s = torch.norm(torch.exp(p_a.detach()) - torch.exp(p_s / self.tau), p=1)
-        l_s.backward()
-        self.optimizer_tau.step()
-        
-        # Clamp tau to be positive and reasonable range
-        self.tau.data.clamp_(min=0.1, max=10.0)
-        
-        if debug:
-            print(f"Tau: {self.tau.item():.4f}, L_s: {l_s.item():.4f}")
-
-        # 2. Form ensemble prediction
+        # Form ensemble prediction
         p_e_prime = p_a + (p_s / self.tau.detach())
         
         # Adaptive balance factor T with numerical stability
@@ -122,34 +116,43 @@ class COCA(nn.Module):
         T = max_p_e_prime / torch.clamp(max_p_a, min=1e-8)
         p_e = p_e_prime / torch.clamp(T, min=1e-8)
 
-        # 3. Calculate losses
-        # Marginal entropy loss
+        # Calculate losses
         l_mar = self.entropy_loss(p_e)
-
-        # Cross-model knowledge distillation loss
         y_hat = p_e.detach().argmax(dim=1)
         l_ckd_a = F.cross_entropy(p_a, y_hat)
         l_ckd_s = F.cross_entropy(p_s, y_hat)
         l_ckd = l_ckd_a + l_ckd_s
-
-        # Self-adaptation loss
         l_self_a = self.entropy_loss(p_a)
         l_self_s = self.entropy_loss(p_s)
         l_sa = l_self_a + l_self_s
-
-        # Total loss
         loss = l_mar + l_ckd + l_sa
 
-        # Update models
-        if self.optimizer_anchor is not None:
-            self.optimizer_anchor.zero_grad()
-        if self.optimizer_aux is not None:
-            self.optimizer_aux.zero_grad()
         loss.backward()
         if self.optimizer_anchor is not None:
             self.optimizer_anchor.step()
         if self.optimizer_aux is not None:
             self.optimizer_aux.step()
+
+        # --- Tau update (separate graph) ---
+        self.optimizer_tau.zero_grad()
+        
+        # Numerically stable exponential, inspired by softmax
+        p_a_detached = p_a.detach()
+        p_s_detached = p_s.detach()
+        p_s_scaled = p_s_detached / self.tau
+        
+        p_a_stable = torch.exp(p_a_detached - torch.max(p_a_detached, dim=1, keepdim=True)[0])
+        p_s_stable = torch.exp(p_s_scaled - torch.max(p_s_scaled, dim=1, keepdim=True)[0])
+
+        l_s = torch.norm(p_a_stable - p_s_stable, p=1)
+        l_s.backward()
+        self.optimizer_tau.step()
+        
+        # Clamp tau to be positive and reasonable range
+        self.tau.data.clamp_(min=0.1, max=10.0)
+        
+        if debug:
+            print(f"Tau: {self.tau.item():.4f}, L_s: {l_s.item():.4f}")
 
     def entropy_loss(self, logits):
         p = F.softmax(logits, dim=1)

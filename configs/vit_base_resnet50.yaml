@@ -20,3 +20,5 @@ coca:
   include_layernorm: true
   include_groupnorm: false
   include_instancenorm: false
+
+debug: true

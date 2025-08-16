@@ -32,7 +32,8 @@ def main():
         args.data_root = config['dataset']['path']
     if args.batch_size is None:
         args.batch_size = config['dataset']['batch_size']
-    
+    args.debug = config['debug'] if 'debug' in config else False
+
     if args.corruption == 'all':
         # Support two ImageNet-C layouts
         # 1) Category layout: <root>/noise/gaussian_noise/5
@@ -128,7 +129,7 @@ def run_test(args, config, corruption_type):
             images_anchor = images_anchor.cuda()
             images_aux = images_aux.cuda()
         
-        coca.update(images_anchor, images_aux)
+        coca.update(images_anchor, images_aux, debug=args.debug)
 
     # Evaluation
     accs = test_accuracy(coca, args.data_root, args.batch_size, args.workers, corruption_type, args.severity,
