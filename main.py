@@ -131,7 +131,7 @@ def run_test(args, config, corruption_type):
             images_aux = images_aux.cuda()
         tau = coca.update(images_anchor, images_aux, debug=args.debug)
         if args.debug:
-            pbar.set_postfix(tau=f"{tau.item():.4f}")
+            pbar.set_postfix(tau=f"{tau:.4f}")
 
     # Evaluation
     accs = test_accuracy(coca, args.data_root, args.batch_size, args.workers, corruption_type, args.severity,
