@@ -39,7 +39,7 @@ class COCA(nn.Module):
     # Learnable scaling factor tau
         device = "cuda" if torch.cuda.is_available() else "cpu"
         self.tau = nn.Parameter(torch.tensor(1.0, requires_grad=True, device=device))
-        self.optimizer_tau = optim.SGD([self.tau], lr=0.01, momentum=momentum)
+        self.optimizer_tau = optim.SGD([self.tau], lr=0.0001, momentum=momentum)
 
     def setup_optimizer(self, model, lr, momentum):
         # collect all trainable normalization layer parameters
@@ -136,12 +136,17 @@ class COCA(nn.Module):
         # --- Tau update (separate graph) ---
         self.optimizer_tau.zero_grad()
         
-        # Numerically stable exponential, inspired by softmax
         p_a_detached = p_a.detach()
         p_s_detached = p_s.detach()
-        p_s_scaled = p_s_detached / self.tau
+
+        # Normalize logits to focus on distribution shape, not magnitude
+        p_a_norm = p_a_detached / torch.norm(p_a_detached, p=2, dim=1, keepdim=True)
+        p_s_norm = p_s_detached / torch.norm(p_s_detached, p=2, dim=1, keepdim=True)
         
-        p_a_stable = torch.exp(p_a_detached - torch.max(p_a_detached, dim=1, keepdim=True)[0])
+        p_s_scaled = p_s_norm / self.tau
+        
+        # Numerically stable exponential, inspired by softmax
+        p_a_stable = torch.exp(p_a_norm - torch.max(p_a_norm, dim=1, keepdim=True)[0])
         p_s_stable = torch.exp(p_s_scaled - torch.max(p_s_scaled, dim=1, keepdim=True)[0])
 
         l_s = torch.norm(p_a_stable - p_s_stable, p=1)
@@ -152,7 +157,7 @@ class COCA(nn.Module):
         self.tau.data.clamp_(min=0.1, max=10.0)
         
         if debug:
-            print(f"Tau: {self.tau.item():.4f}, L_s: {l_s.item():.4f}")
+            return self.tau.item()
 
     def entropy_loss(self, logits):
         p = F.softmax(logits, dim=1)

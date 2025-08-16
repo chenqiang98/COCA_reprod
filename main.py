@@ -124,12 +124,14 @@ def run_test(args, config, corruption_type):
     data_loader = torch.utils.data.DataLoader(dataset, batch_size=args.batch_size, num_workers=args.workers, shuffle=False)
 
     # Training loop (Test-Time Adaptation)
-    for images_anchor, images_aux, _ in tqdm(data_loader, desc=f"Adapting on {corruption_type}", leave=False):
+    pbar = tqdm(data_loader, desc=f"Adapting on {corruption_type}", leave=False)
+    for images_anchor, images_aux, _ in pbar:
         if torch.cuda.is_available():
             images_anchor = images_anchor.cuda()
             images_aux = images_aux.cuda()
-        
-        coca.update(images_anchor, images_aux, debug=args.debug)
+        tau = coca.update(images_anchor, images_aux, debug=args.debug)
+        if args.debug:
+            pbar.set_postfix(tau=f"{tau.item():.4f}")
 
     # Evaluation
     accs = test_accuracy(coca, args.data_root, args.batch_size, args.workers, corruption_type, args.severity,
