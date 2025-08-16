@@ -122,7 +122,7 @@ class ImageNetC(Dataset):
             
         return img_anchor, img_aux, label
 
-def get_imagenet_c_loader(data_dir, corruption_type, severity, batch_size, num_workers=8, anchor_model_name='vit_base_patch16_224', aux_model_name=None):
+def get_imagenet_c_loader(data_dir, corruption_type, severity, batch_size, num_workers=8, anchor_model_name='vit_base_patch16_224', aux_model_name=None, shuffle=False):
     transform_anchor = get_transform(anchor_model_name)
     
     single_model = aux_model_name is None
@@ -134,7 +134,7 @@ def get_imagenet_c_loader(data_dir, corruption_type, severity, batch_size, num_w
     loader = torch.utils.data.DataLoader(
         dataset,
         batch_size=batch_size,
-        shuffle=False,
+        shuffle=shuffle,
         num_workers=num_workers,
         pin_memory=True,
     )

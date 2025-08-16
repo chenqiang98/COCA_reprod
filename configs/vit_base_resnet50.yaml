@@ -12,6 +12,7 @@ dataset:
   name: 'ImageNet-C'
   path: './data/ImageNet-C'  # Path to full ImageNet-C
   batch_size: 64
+  shuffle: True  # Enable shuffling for better training randomness
 
 
 coca:
