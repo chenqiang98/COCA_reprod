@@ -46,7 +46,8 @@ def test_accuracy(model, data_root, batch_size, workers, corruption, severity, a
             aux_correct += (aux_pred == labels).sum().item()
 
             # combined: follow COCA forward logic with current tau
-            p_e = (p_a + p_s) / 2 
+            p_s /= model.tau.detach()
+            p_e = p_a + p_s
             comb_pred = p_e.argmax(dim=1)
             comb_correct += (comb_pred == labels).sum().item()
 
