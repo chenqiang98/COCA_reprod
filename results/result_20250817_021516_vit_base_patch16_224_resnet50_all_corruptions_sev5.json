@@ -1,0 +1,97 @@
+{
+    "timestamp": "20250817_021516",
+    "models": {
+        "anchor": "vit_base_patch16_224",
+        "auxiliary": "resnet50"
+    },
+    "dataset": "ImageNet-C",
+    "severity": 5,
+    "hyperparameters": {
+        "lr_anchor": 0.001,
+        "lr_aux": 0.00025,
+        "momentum": 0.9,
+        "batch_size": 64
+    },
+    "results": {
+        "brightness": {
+            "anchor": "54.63%",
+            "aux": "48.91%",
+            "combined": "54.90%"
+        },
+        "contrast": {
+            "anchor": "48.01%",
+            "aux": "37.05%",
+            "combined": "48.40%"
+        },
+        "defocus_blur": {
+            "anchor": "41.50%",
+            "aux": "29.33%",
+            "combined": "41.84%"
+        },
+        "elastic_transform": {
+            "anchor": "48.04%",
+            "aux": "42.72%",
+            "combined": "48.41%"
+        },
+        "fog": {
+            "anchor": "51.21%",
+            "aux": "43.70%",
+            "combined": "51.50%"
+        },
+        "frost": {
+            "anchor": "16.38%",
+            "aux": "23.50%",
+            "combined": "18.38%"
+        },
+        "gaussian_noise": {
+            "anchor": "39.62%",
+            "aux": "29.45%",
+            "combined": "39.97%"
+        },
+        "glass_blur": {
+            "anchor": "40.49%",
+            "aux": "28.56%",
+            "combined": "40.83%"
+        },
+        "impulse_noise": {
+            "anchor": "40.33%",
+            "aux": "30.30%",
+            "combined": "40.69%"
+        },
+        "jpeg_compression": {
+            "anchor": "48.44%",
+            "aux": "40.99%",
+            "combined": "48.84%"
+        },
+        "motion_blur": {
+            "anchor": "44.65%",
+            "aux": "36.97%",
+            "combined": "45.46%"
+        },
+        "pixelate": {
+            "anchor": "51.31%",
+            "aux": "44.34%",
+            "combined": "51.62%"
+        },
+        "shot_noise": {
+            "anchor": "40.36%",
+            "aux": "31.22%",
+            "combined": "40.74%"
+        },
+        "snow": {
+            "anchor": "37.81%",
+            "aux": "35.51%",
+            "combined": "40.93%"
+        },
+        "zoom_blur": {
+            "anchor": "41.31%",
+            "aux": "36.22%",
+            "combined": "41.79%"
+        }
+    },
+    "average_accuracy": {
+        "anchor": "42.94%",
+        "aux": "35.92%",
+        "combined": "43.62%"
+    }
+}
