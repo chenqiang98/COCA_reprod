@@ -34,6 +34,7 @@ def main():
         args.batch_size = config['dataset']['batch_size']
     args.debug = config['debug'] if 'debug' in config else False
     args.shuffle = config['dataset'].get('shuffle', False)
+    args.n_examples = config['dataset'].get('n_examples', None)
 
     if args.corruption == 'all':
         # Support two ImageNet-C layouts
@@ -121,7 +122,7 @@ def run_test(args, config, corruption_type):
     transform_aux = get_transform(aux_model_name)
     
     dataset = ImageNetC(root=args.data_root, corruption_type=corruption_type, severity=args.severity,
-                        transform_anchor=transform_anchor, transform_aux=transform_aux)
+                        transform_anchor=transform_anchor, transform_aux=transform_aux, n_examples=args.n_examples)
     data_loader = torch.utils.data.DataLoader(dataset, batch_size=args.batch_size, num_workers=args.workers, shuffle=args.shuffle)
 
     # Training loop (Test-Time Adaptation)

@@ -17,6 +17,8 @@ def test_single_model_accuracy():
 
     with open(args.config, 'r') as f:
         config = yaml.safe_load(f)
+    args.shuffle = config['dataset'].get('shuffle', False)
+    args.n_examples = config['dataset'].get('n_examples', None)
 
     # Create model from the 'large_model' configuration
     model_config = config['model']['large_model']
@@ -53,7 +55,9 @@ def test_single_model_accuracy():
                                             config['dataset']['batch_size'],
                                             num_workers=4,
                                             anchor_model_name=model_config['name'],
-                                            aux_model_name=None)
+                                            aux_model_name=None,
+                                            shuffle=args.shuffle,
+                                            n_examples=args.n_examples)
 
             total_acc = 0
             with torch.no_grad():

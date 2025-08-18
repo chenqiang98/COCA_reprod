@@ -12,6 +12,7 @@ dataset:
   name: 'ImageNet-C'
   path: './data/ImageNet-C'
   batch_size: 64
+  n_examples: 5000
 
 coca:
   # Norm layers to adapt (Tent uses BN-only). Set include_layernorm=true to adapt ViT LNs.

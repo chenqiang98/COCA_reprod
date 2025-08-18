@@ -8,7 +8,7 @@ import json
 from utils.augmentations import get_transform
 
 class ImageNetC(Dataset):
-    def __init__(self, root, corruption_type, severity, transform_anchor=None, transform_aux=None, single_model=False, class_index_path: str | None = None):
+    def __init__(self, root, corruption_type, severity, transform_anchor=None, transform_aux=None, single_model=False, class_index_path: str | None = None, n_examples=None):
         """
         Robust ImageNet-C loader supporting two common layouts:
         1) Folder-per-class: <root>/<corruption>/<severity>/<synset>/*.JPEG
@@ -103,6 +103,10 @@ class ImageNetC(Dataset):
                 for idx, fname in enumerate(images_sorted):
                     self.image_paths.append(os.path.join(self.root, fname))
                     self.labels.append(int(labels[idx]))
+
+        if n_examples:
+            self.image_paths = self.image_paths[:n_examples]
+            self.labels = self.labels[:n_examples]
                     
     def __len__(self):
         return len(self.image_paths)
@@ -122,7 +126,7 @@ class ImageNetC(Dataset):
             
         return img_anchor, img_aux, label
 
-def get_imagenet_c_loader(data_dir, corruption_type, severity, batch_size, num_workers=8, anchor_model_name='vit_base_patch16_224', aux_model_name=None, shuffle=False):
+def get_imagenet_c_loader(data_dir, corruption_type, severity, batch_size, num_workers=8, anchor_model_name='vit_base_patch16_224', aux_model_name=None, shuffle=False, n_examples=None):
     transform_anchor = get_transform(anchor_model_name)
     
     single_model = aux_model_name is None
@@ -130,7 +134,7 @@ def get_imagenet_c_loader(data_dir, corruption_type, severity, batch_size, num_w
     if not single_model:
         transform_aux = get_transform(aux_model_name)
 
-    dataset = ImageNetC(data_dir, corruption_type, severity, transform_anchor=transform_anchor, transform_aux=transform_aux, single_model=single_model)
+    dataset = ImageNetC(data_dir, corruption_type, severity, transform_anchor=transform_anchor, transform_aux=transform_aux, single_model=single_model, n_examples=n_examples)
     loader = torch.utils.data.DataLoader(
         dataset,
         batch_size=batch_size,
