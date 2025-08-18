@@ -2,8 +2,9 @@ import torch
 import torch.nn.functional as F
 from data.imagenet_c import ImageNetC
 from utils.augmentations import get_transform
+from tqdm import tqdm
 
-def test_accuracy(model, data_root, batch_size, workers, corruption, severity, anchor_model_name='vit_base_patch16_224', aux_model_name='resnet50'):
+def test_accuracy(model, data_root, batch_size, workers, corruption, severity, anchor_model_name='vit_base_patch16_224', aux_model_name='resnet50', shuffle=False, n_examples=None):
     """
     Calculates accuracies on a given ImageNet-C corruption for:
     - anchor model
@@ -16,8 +17,8 @@ def test_accuracy(model, data_root, batch_size, workers, corruption, severity, a
     transform_aux = get_transform(aux_model_name)
 
     dataset = ImageNetC(root=data_root, corruption_type=corruption, severity=severity,
-                        transform_anchor=transform_anchor, transform_aux=transform_aux)
-    data_loader = torch.utils.data.DataLoader(dataset, batch_size=batch_size, num_workers=workers, shuffle=False)
+                        transform_anchor=transform_anchor, transform_aux=transform_aux, n_examples=n_examples)
+    data_loader = torch.utils.data.DataLoader(dataset, batch_size=batch_size, num_workers=workers, shuffle=shuffle)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model.anchor_model.eval()
@@ -29,7 +30,8 @@ def test_accuracy(model, data_root, batch_size, workers, corruption, severity, a
     comb_correct = 0
 
     with torch.no_grad():
-        for images_anchor, images_aux, labels in data_loader:
+        pbar = tqdm(data_loader, desc="Evaluating", leave=False)
+        for images_anchor, images_aux, labels in pbar:
             images_anchor = images_anchor.to(device)
             images_aux = images_aux.to(device)
             labels = labels.to(device)
@@ -59,9 +61,11 @@ def test_accuracy(model, data_root, batch_size, workers, corruption, severity, a
 
             total += labels.size(0)
 
-    eps = 1e-12
+    if total == 0:
+        return {'anchor': 0, 'aux': 0, 'combined': 0}
+
     return {
-        'anchor': 100.0 * anchor_correct / max(total, 1),
-        'aux': 100.0 * aux_correct / max(total, 1),
-        'combined': 100.0 * comb_correct / max(total, 1)
+        'anchor': (anchor_correct / total) * 100,
+        'aux': (aux_correct / total) * 100,
+        'combined': (comb_correct / total) * 100
     }

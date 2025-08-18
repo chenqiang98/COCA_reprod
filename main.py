@@ -137,7 +137,7 @@ def run_test(args, config, corruption_type):
 
     # Evaluation
     accs = test_accuracy(coca, args.data_root, args.batch_size, args.workers, corruption_type, args.severity,
-                         anchor_model_name=anchor_model_name, aux_model_name=aux_model_name)
+                         anchor_model_name=anchor_model_name, aux_model_name=aux_model_name, shuffle=args.shuffle, n_examples=args.n_examples)
     print(f"Accuracies on {corruption_type} (sev {args.severity}) -> anchor: {accs['anchor']:.2f}% | aux: {accs['aux']:.2f}% | combined: {accs['combined']:.2f}%")
     return accs
 
