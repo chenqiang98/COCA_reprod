@@ -4,3 +4,4 @@ timm
 numpy
 pyyaml
 tqdm
+nltk
