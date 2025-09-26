@@ -1,27 +1,27 @@
 {
     "0": [
         "n01440764",
-        "tench, Tinca tinca"
+        "tench"
     ],
     "1": [
         "n01443537",
-        "goldfish, Carassius auratus"
+        "goldfish"
     ],
     "2": [
         "n01484850",
-        "great white shark, white shark, man-eater, man-eating shark, Carcharodon carcharias"
+        "great white shark"
     ],
     "3": [
         "n01491361",
-        "tiger shark, Galeocerdo cuvieri"
+        "tiger shark"
     ],
     "4": [
         "n01494475",
-        "hammerhead, hammerhead shark"
+        "hammerhead"
     ],
     "5": [
         "n01496331",
-        "electric ray, crampfish, numbfish, torpedo"
+        "electric ray"
     ],
     "6": [
         "n01498041",
@@ -37,31 +37,31 @@
     ],
     "9": [
         "n01518878",
-        "ostrich, Struthio camelus"
+        "ostrich"
     ],
     "10": [
         "n01530575",
-        "brambling, Fringilla montifringilla"
+        "brambling"
     ],
     "11": [
         "n01531178",
-        "goldfinch, Carduelis carduelis"
+        "goldfinch"
     ],
     "12": [
         "n01532829",
-        "house finch, linnet, Carpodacus mexicanus"
+        "house finch"
     ],
     "13": [
         "n01534433",
-        "junco, snowbird"
+        "junco"
     ],
     "14": [
         "n01537544",
-        "indigo bunting, indigo finch, indigo bird, Passerina cyanea"
+        "indigo bunting"
     ],
     "15": [
         "n01558993",
-        "robin, American robin, Turdus migratorius"
+        "robin"
     ],
     "16": [
         "n01560419",
@@ -81,7 +81,7 @@
     ],
     "20": [
         "n01601694",
-        "water ouzel, dipper"
+        "water ouzel"
     ],
     "21": [
         "n01608432",
@@ -89,7 +89,7 @@
     ],
     "22": [
         "n01614925",
-        "bald eagle, American eagle, Haliaeetus leucocephalus"
+        "bald eagle"
     ],
     "23": [
         "n01616318",
@@ -97,15 +97,15 @@
     ],
     "24": [
         "n01622779",
-        "great grey owl, great gray owl, Strix nebulosa"
+        "great grey owl"
     ],
     "25": [
         "n01629819",
-        "European fire salamander, Salamandra salamandra"
+        "European fire salamander"
     ],
     "26": [
         "n01630670",
-        "common newt, Triturus vulgaris"
+        "common newt"
     ],
     "27": [
         "n01631663",
@@ -113,31 +113,31 @@
     ],
     "28": [
         "n01632458",
-        "spotted salamander, Ambystoma maculatum"
+        "spotted salamander"
     ],
     "29": [
         "n01632777",
-        "axolotl, mud puppy, Ambystoma mexicanum"
+        "axolotl"
     ],
     "30": [
         "n01641577",
-        "bullfrog, Rana catesbeiana"
+        "bullfrog"
     ],
     "31": [
         "n01644373",
-        "tree frog, tree-frog"
+        "tree frog"
     ],
     "32": [
         "n01644900",
-        "tailed frog, bell toad, ribbed toad, Ascaphus trui"
+        "tailed frog"
     ],
     "33": [
         "n01664065",
-        "loggerhead, loggerhead turtle, Caretta caretta"
+        "loggerhead"
     ],
     "34": [
         "n01665541",
-        "leatherback turtle, leathery turtle, Dermochelys coriacea"
+        "leatherback turtle"
     ],
     "35": [
         "n01667114",
@@ -149,7 +149,7 @@
     ],
     "37": [
         "n01669191",
-        "box turtle, box tortoise"
+        "box turtle"
     ],
     "38": [
         "n01675722",
@@ -157,15 +157,15 @@
     ],
     "39": [
         "n01677366",
-        "common iguana, iguana, Iguana iguana"
+        "common iguana"
     ],
     "40": [
         "n01682714",
-        "American chameleon, anole, Anolis carolinensis"
+        "American chameleon"
     ],
     "41": [
         "n01685808",
-        "whiptail, whiptail lizard"
+        "whiptail"
     ],
     "42": [
         "n01687978",
@@ -173,7 +173,7 @@
     ],
     "43": [
         "n01688243",
-        "frilled lizard, Chlamydosaurus kingi"
+        "frilled lizard"
     ],
     "44": [
         "n01689811",
@@ -181,27 +181,27 @@
     ],
     "45": [
         "n01692333",
-        "Gila monster, Heloderma suspectum"
+        "Gila monster"
     ],
     "46": [
         "n01693334",
-        "green lizard, Lacerta viridis"
+        "green lizard"
     ],
     "47": [
         "n01694178",
-        "African chameleon, Chamaeleo chamaeleon"
+        "African chameleon"
     ],
     "48": [
         "n01695060",
-        "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis"
+        "Komodo dragon"
     ],
     "49": [
         "n01697457",
-        "African crocodile, Nile crocodile, Crocodylus niloticus"
+        "African crocodile"
     ],
     "50": [
         "n01698640",
-        "American alligator, Alligator mississipiensis"
+        "American alligator"
     ],
     "51": [
         "n01704323",
@@ -209,27 +209,27 @@
     ],
     "52": [
         "n01728572",
-        "thunder snake, worm snake, Carphophis amoenus"
+        "thunder snake"
     ],
     "53": [
         "n01728920",
-        "ringneck snake, ring-necked snake, ring snake"
+        "ringneck snake"
     ],
     "54": [
         "n01729322",
-        "hognose snake, puff adder, sand viper"
+        "hognose snake"
     ],
     "55": [
         "n01729977",
-        "green snake, grass snake"
+        "green snake"
     ],
     "56": [
         "n01734418",
-        "king snake, kingsnake"
+        "king snake"
     ],
     "57": [
         "n01735189",
-        "garter snake, grass snake"
+        "garter snake"
     ],
     "58": [
         "n01737021",
@@ -241,19 +241,19 @@
     ],
     "60": [
         "n01740131",
-        "night snake, Hypsiglena torquata"
+        "night snake"
     ],
     "61": [
         "n01742172",
-        "boa constrictor, Constrictor constrictor"
+        "boa constrictor"
     ],
     "62": [
         "n01744401",
-        "rock python, rock snake, Python sebae"
+        "rock python"
     ],
     "63": [
         "n01748264",
-        "Indian cobra, Naja naja"
+        "Indian cobra"
     ],
     "64": [
         "n01749939",
@@ -261,171 +261,171 @@
     ],
     "65": [
         "n01751748",
-        "Unknown Class (n01751748)"
+        "sea snake"
     ],
     "66": [
         "n01753488",
-        "sea snake"
+        "horned viper"
     ],
     "67": [
         "n01755581",
-        "horned viper, cerastes, sand viper, horned asp, Cerastes cornutus"
+        "diamondback"
     ],
     "68": [
         "n01756291",
-        "diamondback, diamondback rattlesnake, Crotalus adamanteus"
+        "sidewinder"
     ],
     "69": [
         "n01768244",
-        "sidewinder, horned rattlesnake, Crotalus cerastes"
+        "trilobite"
     ],
     "70": [
         "n01770081",
-        "trilobite"
+        "harvestman"
     ],
     "71": [
         "n01770393",
-        "harvestman, daddy longlegs, Phalangium opilio"
+        "scorpion"
     ],
     "72": [
         "n01773157",
-        "scorpion"
+        "black and gold garden spider"
     ],
     "73": [
         "n01773549",
-        "black and gold garden spider, Argiope aurantia"
+        "barn spider"
     ],
     "74": [
         "n01773797",
-        "barn spider, Araneus cavaticus"
+        "garden spider"
     ],
     "75": [
         "n01774384",
-        "garden spider, Aranea diademata"
+        "black widow"
     ],
     "76": [
         "n01774750",
-        "black widow, Latrodectus mactans"
+        "tarantula"
     ],
     "77": [
         "n01775062",
-        "tarantula"
+        "wolf spider"
     ],
     "78": [
         "n01776313",
-        "wolf spider, hunting spider"
+        "tick"
     ],
     "79": [
         "n01784675",
-        "tick"
+        "centipede"
     ],
     "80": [
         "n01795545",
-        "centipede"
+        "black grouse"
     ],
     "81": [
         "n01796340",
-        "black grouse"
+        "ptarmigan"
     ],
     "82": [
         "n01797886",
-        "ptarmigan"
+        "ruffed grouse"
     ],
     "83": [
         "n01798484",
-        "ruffed grouse, partridge, Bonasa umbellus"
+        "prairie chicken"
     ],
     "84": [
         "n01806143",
-        "prairie chicken, prairie grouse, prairie fowl"
+        "peacock"
     ],
     "85": [
         "n01806567",
-        "peacock"
+        "quail"
     ],
     "86": [
         "n01807496",
-        "quail"
+        "partridge"
     ],
     "87": [
         "n01817953",
-        "partridge"
+        "African grey"
     ],
     "88": [
         "n01818515",
-        "African grey, African gray, Psittacus erithacus"
+        "macaw"
     ],
     "89": [
         "n01819313",
-        "macaw"
+        "sulphur-crested cockatoo"
     ],
     "90": [
         "n01820546",
-        "sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita"
+        "lorikeet"
     ],
     "91": [
         "n01824575",
-        "lorikeet"
+        "coucal"
     ],
     "92": [
         "n01828970",
-        "coucal"
+        "bee eater"
     ],
     "93": [
         "n01829413",
-        "bee eater"
+        "hornbill"
     ],
     "94": [
         "n01833805",
-        "hornbill"
+        "hummingbird"
     ],
     "95": [
         "n01843065",
-        "hummingbird"
+        "jacamar"
     ],
     "96": [
         "n01843383",
-        "jacamar"
+        "toucan"
     ],
     "97": [
         "n01847000",
-        "toucan"
+        "drake"
     ],
     "98": [
         "n01855032",
-        "drake"
+        "red-breasted merganser"
     ],
     "99": [
         "n01855672",
-        "red-breasted merganser, Mergus serrator"
+        "goose"
     ],
     "100": [
         "n01860187",
-        "goose"
+        "black swan"
     ],
     "101": [
         "n01871265",
-        "black swan, Cygnus atratus"
+        "tusker"
     ],
     "102": [
         "n01872401",
-        "tusker"
+        "echidna"
     ],
     "103": [
         "n01873310",
-        "echidna, spiny anteater, anteater"
+        "platypus"
     ],
     "104": [
         "n01877812",
-        "platypus, duckbill, duckbilled platypus, duck-billed platypus, Ornithorhynchus anatinus"
+        "wallaby"
     ],
     "105": [
         "n01882714",
-        "wallaby, brush kangaroo"
+        "koala"
     ],
     "106": [
         "n01883070",
-        "koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus"
+        "wombat"
     ],
     "107": [
         "n01910747",
@@ -433,7 +433,7 @@
     ],
     "108": [
         "n01914609",
-        "sea anemone, anemone"
+        "sea anemone"
     ],
     "109": [
         "n01917289",
@@ -441,11 +441,11 @@
     ],
     "110": [
         "n01924916",
-        "flatworm, platyhelminth"
+        "flatworm"
     ],
     "111": [
         "n01930112",
-        "nematode, nematode worm, roundworm"
+        "nematode"
     ],
     "112": [
         "n01943899",
@@ -461,23 +461,23 @@
     ],
     "115": [
         "n01950731",
-        "sea slug, nudibranch"
+        "sea slug"
     ],
     "116": [
         "n01955084",
-        "chiton, coat-of-mail shell, sea cradle, polyplacophore"
+        "chiton"
     ],
     "117": [
         "n01968897",
-        "chambered nautilus, pearly nautilus, nautilus"
+        "chambered nautilus"
     ],
     "118": [
         "n01978287",
-        "Dungeness crab, Cancer magister"
+        "Dungeness crab"
     ],
     "119": [
         "n01978455",
-        "rock crab, Cancer irroratus"
+        "rock crab"
     ],
     "120": [
         "n01980166",
@@ -485,19 +485,19 @@
     ],
     "121": [
         "n01981276",
-        "king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica"
+        "king crab"
     ],
     "122": [
         "n01983481",
-        "American lobster, Northern lobster, Maine lobster, Homarus americanus"
+        "American lobster"
     ],
     "123": [
         "n01984695",
-        "spiny lobster, langouste, rock lobster, crawfish, crayfish, sea crawfish"
+        "spiny lobster"
     ],
     "124": [
         "n01985128",
-        "crayfish, crawfish, crawdad, crawdaddy"
+        "crayfish"
     ],
     "125": [
         "n01986214",
@@ -509,11 +509,11 @@
     ],
     "127": [
         "n02002556",
-        "white stork, Ciconia ciconia"
+        "white stork"
     ],
     "128": [
         "n02002724",
-        "black stork, Ciconia nigra"
+        "black stork"
     ],
     "129": [
         "n02006656",
@@ -525,11 +525,11 @@
     ],
     "131": [
         "n02009229",
-        "little blue heron, Egretta caerulea"
+        "little blue heron"
     ],
     "132": [
         "n02009912",
-        "American egret, great white heron, Egretta albus"
+        "American egret"
     ],
     "133": [
         "n02011460",
@@ -541,15 +541,15 @@
     ],
     "135": [
         "n02013706",
-        "limpkin, Aramus pictus"
+        "limpkin"
     ],
     "136": [
         "n02017213",
-        "European gallinule, Porphyrio porphyrio"
+        "European gallinule"
     ],
     "137": [
         "n02018207",
-        "American coot, marsh hen, mud hen, water hen, Fulica americana"
+        "American coot"
     ],
     "138": [
         "n02018795",
@@ -557,15 +557,15 @@
     ],
     "139": [
         "n02025239",
-        "ruddy turnstone, Arenaria interpres"
+        "ruddy turnstone"
     ],
     "140": [
         "n02027492",
-        "red-backed sandpiper, dunlin, Erolia alpina"
+        "red-backed sandpiper"
     ],
     "141": [
         "n02028035",
-        "redshank, Tringa totanus"
+        "redshank"
     ],
     "142": [
         "n02033041",
@@ -573,7 +573,7 @@
     ],
     "143": [
         "n02037110",
-        "oystercatcher, oyster catcher"
+        "oystercatcher"
     ],
     "144": [
         "n02051845",
@@ -581,23 +581,23 @@
     ],
     "145": [
         "n02056570",
-        "king penguin, Aptenodytes patagonica"
+        "king penguin"
     ],
     "146": [
         "n02058221",
-        "albatross, mollymawk"
+        "albatross"
     ],
     "147": [
         "n02066245",
-        "grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus"
+        "grey whale"
     ],
     "148": [
         "n02071294",
-        "killer whale, killer, orca, grampus, sea wolf, Orcinus orca"
+        "killer whale"
     ],
     "149": [
         "n02074367",
-        "dugong, Dugong dugon"
+        "dugong"
     ],
     "150": [
         "n02077923",
@@ -613,11 +613,11 @@
     ],
     "153": [
         "n02085936",
-        "Maltese dog, Maltese terrier, Maltese"
+        "Maltese dog"
     ],
     "154": [
         "n02086079",
-        "Pekinese, Pekingese, Peke"
+        "Pekinese"
     ],
     "155": [
         "n02086240",
@@ -641,11 +641,11 @@
     ],
     "160": [
         "n02088094",
-        "Afghan hound, Afghan"
+        "Afghan hound"
     ],
     "161": [
         "n02088238",
-        "basset, basset hound"
+        "basset"
     ],
     "162": [
         "n02088364",
@@ -653,7 +653,7 @@
     ],
     "163": [
         "n02088466",
-        "bloodhound, sleuthhound"
+        "bloodhound"
     ],
     "164": [
         "n02088632",
@@ -665,7 +665,7 @@
     ],
     "166": [
         "n02089867",
-        "Walker hound, Walker foxhound"
+        "Walker hound"
     ],
     "167": [
         "n02089973",
@@ -677,7 +677,7 @@
     ],
     "169": [
         "n02090622",
-        "borzoi, Russian wolfhound"
+        "borzoi"
     ],
     "170": [
         "n02090721",
@@ -693,23 +693,23 @@
     ],
     "173": [
         "n02091244",
-        "Ibizan hound, Ibizan Podenco"
+        "Ibizan hound"
     ],
     "174": [
         "n02091467",
-        "Norwegian elkhound, elkhound"
+        "Norwegian elkhound"
     ],
     "175": [
         "n02091635",
-        "otterhound, otter hound"
+        "otterhound"
     ],
     "176": [
         "n02091831",
-        "Saluki, gazelle hound"
+        "Saluki"
     ],
     "177": [
         "n02092002",
-        "Scottish deerhound, deerhound"
+        "Scottish deerhound"
     ],
     "178": [
         "n02092339",
@@ -717,11 +717,11 @@
     ],
     "179": [
         "n02093256",
-        "Staffordshire bullterrier, Staffordshire bull terrier"
+        "Staffordshire bullterrier"
     ],
     "180": [
         "n02093428",
-        "American Staffordshire terrier, Staffordshire terrier, American pit bull terrier, pit bull terrier"
+        "American Staffordshire terrier"
     ],
     "181": [
         "n02093647",
@@ -761,15 +761,15 @@
     ],
     "190": [
         "n02095889",
-        "Sealyham terrier, Sealyham"
+        "Sealyham terrier"
     ],
     "191": [
         "n02096051",
-        "Airedale, Airedale terrier"
+        "Airedale"
     ],
     "192": [
         "n02096177",
-        "cairn, cairn terrier"
+        "cairn"
     ],
     "193": [
         "n02096294",
@@ -777,11 +777,11 @@
     ],
     "194": [
         "n02096437",
-        "Dandie Dinmont, Dandie Dinmont terrier"
+        "Dandie Dinmont"
     ],
     "195": [
         "n02096585",
-        "Boston bull, Boston terrier"
+        "Boston bull"
     ],
     "196": [
         "n02097047",
@@ -797,15 +797,15 @@
     ],
     "199": [
         "n02097298",
-        "Scotch terrier, Scottish terrier, Scottie"
+        "Scotch terrier"
     ],
     "200": [
         "n02097474",
-        "Tibetan terrier, chrysanthemum dog"
+        "Tibetan terrier"
     ],
     "201": [
         "n02097658",
-        "silky terrier, Sydney silky"
+        "silky terrier"
     ],
     "202": [
         "n02098105",
@@ -817,7 +817,7 @@
     ],
     "204": [
         "n02098413",
-        "Lhasa, Lhasa apso"
+        "Lhasa"
     ],
     "205": [
         "n02099267",
@@ -845,7 +845,7 @@
     ],
     "211": [
         "n02100583",
-        "vizsla, Hungarian pointer"
+        "vizsla"
     ],
     "212": [
         "n02100735",
@@ -853,7 +853,7 @@
     ],
     "213": [
         "n02100877",
-        "Irish setter, red setter"
+        "Irish setter"
     ],
     "214": [
         "n02101006",
@@ -865,11 +865,11 @@
     ],
     "216": [
         "n02101556",
-        "clumber, clumber spaniel"
+        "clumber"
     ],
     "217": [
         "n02102040",
-        "English springer, English springer spaniel"
+        "English springer"
     ],
     "218": [
         "n02102177",
@@ -877,7 +877,7 @@
     ],
     "219": [
         "n02102318",
-        "cocker spaniel, English cocker spaniel, cocker"
+        "cocker spaniel"
     ],
     "220": [
         "n02102480",
@@ -917,11 +917,11 @@
     ],
     "229": [
         "n02105641",
-        "Old English sheepdog, bobtail"
+        "Old English sheepdog"
     ],
     "230": [
         "n02105855",
-        "Shetland sheepdog, Shetland, Sheltie"
+        "Shetland sheepdog"
     ],
     "231": [
         "n02106030",
@@ -933,7 +933,7 @@
     ],
     "233": [
         "n02106382",
-        "Bouvier des Flandres, Bouviers des Flandres"
+        "Bouvier des Flandres"
     ],
     "234": [
         "n02106550",
@@ -941,11 +941,11 @@
     ],
     "235": [
         "n02106662",
-        "German shepherd, German shepherd dog, German police dog, alsatian"
+        "German shepherd"
     ],
     "236": [
         "n02107142",
-        "Doberman, Doberman pinscher"
+        "Doberman"
     ],
     "237": [
         "n02107312",
@@ -989,15 +989,15 @@
     ],
     "247": [
         "n02109525",
-        "Saint Bernard, St Bernard"
+        "Saint Bernard"
     ],
     "248": [
         "n02109961",
-        "Eskimo dog, husky"
+        "Eskimo dog"
     ],
     "249": [
         "n02110063",
-        "malamute, malemute, Alaskan malamute"
+        "malamute"
     ],
     "250": [
         "n02110185",
@@ -1005,11 +1005,11 @@
     ],
     "251": [
         "n02110341",
-        "dalmatian, coach dog, carriage dog"
+        "dalmatian"
     ],
     "252": [
         "n02110627",
-        "affenpinscher, monkey pinscher, monkey dog"
+        "affenpinscher"
     ],
     "253": [
         "n02110806",
@@ -1017,7 +1017,7 @@
     ],
     "254": [
         "n02110958",
-        "pug, pug-dog"
+        "pug"
     ],
     "255": [
         "n02111129",
@@ -1025,7 +1025,7 @@
     ],
     "256": [
         "n02111277",
-        "Newfoundland, Newfoundland dog"
+        "Newfoundland"
     ],
     "257": [
         "n02111500",
@@ -1033,7 +1033,7 @@
     ],
     "258": [
         "n02111889",
-        "Samoyed, Samoyede"
+        "Samoyed"
     ],
     "259": [
         "n02112018",
@@ -1041,7 +1041,7 @@
     ],
     "260": [
         "n02112137",
-        "chow, chow chow"
+        "chow"
     ],
     "261": [
         "n02112350",
@@ -1053,11 +1053,11 @@
     ],
     "263": [
         "n02113023",
-        "Pembroke, Pembroke Welsh corgi"
+        "Pembroke"
     ],
     "264": [
         "n02113186",
-        "Cardigan, Cardigan Welsh corgi"
+        "Cardigan"
     ],
     "265": [
         "n02113624",
@@ -1077,55 +1077,55 @@
     ],
     "269": [
         "n02114367",
-        "timber wolf, grey wolf, gray wolf, Canis lupus"
+        "timber wolf"
     ],
     "270": [
         "n02114548",
-        "white wolf, Arctic wolf, Canis lupus tundrarum"
+        "white wolf"
     ],
     "271": [
         "n02114712",
-        "red wolf, maned wolf, Canis rufus, Canis niger"
+        "red wolf"
     ],
     "272": [
         "n02114855",
-        "coyote, prairie wolf, brush wolf, Canis latrans"
+        "coyote"
     ],
     "273": [
         "n02115641",
-        "dingo, warrigal, warragal, Canis dingo"
+        "dingo"
     ],
     "274": [
         "n02115913",
-        "dhole, Cuon alpinus"
+        "dhole"
     ],
     "275": [
         "n02116738",
-        "African hunting dog, hyena dog, Cape hunting dog, Lycaon pictus"
+        "African hunting dog"
     ],
     "276": [
         "n02117135",
-        "hyena, hyaena"
+        "hyena"
     ],
     "277": [
         "n02119022",
-        "red fox, Vulpes vulpes"
+        "red fox"
     ],
     "278": [
         "n02119789",
-        "kit fox, Vulpes macrotis"
+        "kit fox"
     ],
     "279": [
         "n02120079",
-        "Arctic fox, white fox, Alopex lagopus"
+        "Arctic fox"
     ],
     "280": [
         "n02120505",
-        "grey fox, gray fox, Urocyon cinereoargenteus"
+        "grey fox"
     ],
     "281": [
         "n02123045",
-        "tabby, tabby cat"
+        "tabby"
     ],
     "282": [
         "n02123159",
@@ -1137,7 +1137,7 @@
     ],
     "284": [
         "n02123597",
-        "Siamese cat, Siamese"
+        "Siamese cat"
     ],
     "285": [
         "n02124075",
@@ -1145,51 +1145,51 @@
     ],
     "286": [
         "n02125311",
-        "cougar, puma, catamount, mountain lion, painter, panther, Felis concolor"
+        "cougar"
     ],
     "287": [
         "n02127052",
-        "lynx, catamount"
+        "lynx"
     ],
     "288": [
         "n02128385",
-        "leopard, Panthera pardus"
+        "leopard"
     ],
     "289": [
         "n02128757",
-        "snow leopard, ounce, Panthera uncia"
+        "snow leopard"
     ],
     "290": [
         "n02128925",
-        "jaguar, panther, Panthera onca, Felis onca"
+        "jaguar"
     ],
     "291": [
         "n02129165",
-        "lion, king of beasts, Panthera leo"
+        "lion"
     ],
     "292": [
         "n02129604",
-        "tiger, Panthera tigris"
+        "tiger"
     ],
     "293": [
         "n02130308",
-        "cheetah, chetah, Acinonyx jubatus"
+        "cheetah"
     ],
     "294": [
         "n02132136",
-        "brown bear, bruin, Ursus arctos"
+        "brown bear"
     ],
     "295": [
         "n02133161",
-        "American black bear, black bear, Ursus americanus, Euarctos americanus"
+        "American black bear"
     ],
     "296": [
         "n02134084",
-        "ice bear, polar bear, Ursus Maritimus, Thalarctos maritimus"
+        "ice bear"
     ],
     "297": [
         "n02134418",
-        "sloth bear, Melursus ursinus, Ursus ursinus"
+        "sloth bear"
     ],
     "298": [
         "n02137549",
@@ -1197,7 +1197,7 @@
     ],
     "299": [
         "n02138441",
-        "meerkat, suricate"
+        "meerkat"
     ],
     "300": [
         "n02165105",
@@ -1205,19 +1205,19 @@
     ],
     "301": [
         "n02165456",
-        "ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle"
+        "ladybug"
     ],
     "302": [
         "n02167151",
-        "ground beetle, carabid beetle"
+        "ground beetle"
     ],
     "303": [
         "n02168699",
-        "long-horned beetle, longicorn, longicorn beetle"
+        "long-horned beetle"
     ],
     "304": [
         "n02169497",
-        "leaf beetle, chrysomelid"
+        "leaf beetle"
     ],
     "305": [
         "n02172182",
@@ -1241,11 +1241,11 @@
     ],
     "310": [
         "n02219486",
-        "ant, emmet, pismire"
+        "ant"
     ],
     "311": [
         "n02226429",
-        "grasshopper, hopper"
+        "grasshopper"
     ],
     "312": [
         "n02229544",
@@ -1253,19 +1253,19 @@
     ],
     "313": [
         "n02231487",
-        "walking stick, walkingstick, stick insect"
+        "walking stick"
     ],
     "314": [
         "n02233338",
-        "cockroach, roach"
+        "cockroach"
     ],
     "315": [
         "n02236044",
-        "mantis, mantid"
+        "mantis"
     ],
     "316": [
         "n02256656",
-        "cicada, cicala"
+        "cicada"
     ],
     "317": [
         "n02259212",
@@ -1273,11 +1273,11 @@
     ],
     "318": [
         "n02264363",
-        "lacewing, lacewing fly"
+        "lacewing"
     ],
     "319": [
         "n02268443",
-        "dragonfly, darning needle, devil's darning needle, sewing needle, snake feeder, snake doctor, mosquito hawk, skeeter hawk"
+        "dragonfly"
     ],
     "320": [
         "n02268853",
@@ -1289,11 +1289,11 @@
     ],
     "322": [
         "n02277742",
-        "ringlet, ringlet butterfly"
+        "ringlet"
     ],
     "323": [
         "n02279972",
-        "monarch, monarch butterfly, milkweed butterfly, Danaus plexippus"
+        "monarch"
     ],
     "324": [
         "n02280649",
@@ -1301,15 +1301,15 @@
     ],
     "325": [
         "n02281406",
-        "sulphur butterfly, sulfur butterfly"
+        "sulphur butterfly"
     ],
     "326": [
         "n02281787",
-        "lycaenid, lycaenid butterfly"
+        "lycaenid"
     ],
     "327": [
         "n02317335",
-        "starfish, sea star"
+        "starfish"
     ],
     "328": [
         "n02319095",
@@ -1317,11 +1317,11 @@
     ],
     "329": [
         "n02321529",
-        "sea cucumber, holothurian"
+        "sea cucumber"
     ],
     "330": [
         "n02325366",
-        "wood rabbit, cottontail, cottontail rabbit"
+        "wood rabbit"
     ],
     "331": [
         "n02326432",
@@ -1329,7 +1329,7 @@
     ],
     "332": [
         "n02328150",
-        "Angora, Angora rabbit"
+        "Angora"
     ],
     "333": [
         "n02342885",
@@ -1337,11 +1337,11 @@
     ],
     "334": [
         "n02346627",
-        "porcupine, hedgehog"
+        "porcupine"
     ],
     "335": [
         "n02356798",
-        "fox squirrel, eastern fox squirrel, Sciurus niger"
+        "fox squirrel"
     ],
     "336": [
         "n02361337",
@@ -1353,7 +1353,7 @@
     ],
     "338": [
         "n02364673",
-        "guinea pig, Cavia cobaya"
+        "guinea pig"
     ],
     "339": [
         "n02389026",
@@ -1365,11 +1365,11 @@
     ],
     "341": [
         "n02395406",
-        "hog, pig, grunter, squealer, Sus scrofa"
+        "hog"
     ],
     "342": [
         "n02396427",
-        "wild boar, boar, Sus scrofa"
+        "wild boar"
     ],
     "343": [
         "n02397096",
@@ -1377,7 +1377,7 @@
     ],
     "344": [
         "n02398521",
-        "hippopotamus, hippo, river horse, Hippopotamus amphibius"
+        "hippopotamus"
     ],
     "345": [
         "n02403003",
@@ -1385,7 +1385,7 @@
     ],
     "346": [
         "n02408429",
-        "water buffalo, water ox, Asiatic buffalo, Bubalus bubalis"
+        "water buffalo"
     ],
     "347": [
         "n02410509",
@@ -1393,15 +1393,15 @@
     ],
     "348": [
         "n02412080",
-        "ram, tup"
+        "ram"
     ],
     "349": [
         "n02415577",
-        "bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis"
+        "bighorn"
     ],
     "350": [
         "n02417914",
-        "ibex, Capra ibex"
+        "ibex"
     ],
     "351": [
         "n02422106",
@@ -1409,7 +1409,7 @@
     ],
     "352": [
         "n02422699",
-        "impala, Aepyceros melampus"
+        "impala"
     ],
     "353": [
         "n02423022",
@@ -1417,7 +1417,7 @@
     ],
     "354": [
         "n02437312",
-        "Arabian camel, dromedary, Camelus dromedarius"
+        "Arabian camel"
     ],
     "355": [
         "n02437616",
@@ -1433,11 +1433,11 @@
     ],
     "358": [
         "n02443114",
-        "polecat, fitch, foulmart, foumart, Mustela putorius"
+        "polecat"
     ],
     "359": [
         "n02443484",
-        "black-footed ferret, ferret, Mustela nigripes"
+        "black-footed ferret"
     ],
     "360": [
         "n02444819",
@@ -1445,7 +1445,7 @@
     ],
     "361": [
         "n02445715",
-        "skunk, polecat, wood pussy"
+        "skunk"
     ],
     "362": [
         "n02447366",
@@ -1457,35 +1457,35 @@
     ],
     "364": [
         "n02457408",
-        "three-toed sloth, ai, Bradypus tridactylus"
+        "three-toed sloth"
     ],
     "365": [
         "n02480495",
-        "orangutan, orang, Pongo pygmaeus"
+        "orangutan"
     ],
     "366": [
         "n02480855",
-        "gorilla, Gorilla gorilla"
+        "gorilla"
     ],
     "367": [
         "n02481823",
-        "chimpanzee, chimp, Pan troglodytes"
+        "chimpanzee"
     ],
     "368": [
         "n02483362",
-        "gibbon, Hylobates lar"
+        "gibbon"
     ],
     "369": [
         "n02483708",
-        "siamang, Hylobates syndactylus, Symphalangus syndactylus"
+        "siamang"
     ],
     "370": [
         "n02484975",
-        "guenon, guenon monkey"
+        "guenon"
     ],
     "371": [
         "n02486261",
-        "patas, hussar monkey, Erythrocebus patas"
+        "patas"
     ],
     "372": [
         "n02486410",
@@ -1501,11 +1501,11 @@
     ],
     "375": [
         "n02488702",
-        "colobus, colobus monkey"
+        "colobus"
     ],
     "376": [
         "n02489166",
-        "proboscis monkey, Nasalis larvatus"
+        "proboscis monkey"
     ],
     "377": [
         "n02490219",
@@ -1513,51 +1513,51 @@
     ],
     "378": [
         "n02492035",
-        "capuchin, ringtail, Cebus capucinus"
+        "capuchin"
     ],
     "379": [
         "n02492660",
-        "howler monkey, howler"
+        "howler monkey"
     ],
     "380": [
         "n02493509",
-        "titi, titi monkey"
+        "titi"
     ],
     "381": [
         "n02493793",
-        "spider monkey, Ateles geoffroyi"
+        "spider monkey"
     ],
     "382": [
         "n02494079",
-        "squirrel monkey, Saimiri sciureus"
+        "squirrel monkey"
     ],
     "383": [
         "n02497673",
-        "Madagascar cat, ring-tailed lemur, Lemur catta"
+        "Madagascar cat"
     ],
     "384": [
         "n02500267",
-        "indri, indris, Indri indri, Indri brevicaudatus"
+        "indri"
     ],
     "385": [
         "n02504013",
-        "Indian elephant, Elephas maximus"
+        "Indian elephant"
     ],
     "386": [
         "n02504458",
-        "African elephant, Loxodonta africana"
+        "African elephant"
     ],
     "387": [
         "n02509815",
-        "lesser panda, red panda, panda, bear cat, cat bear, Ailurus fulgens"
+        "lesser panda"
     ],
     "388": [
         "n02510455",
-        "giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca"
+        "giant panda"
     ],
     "389": [
         "n02514041",
-        "barracouta, snoek"
+        "barracouta"
     ],
     "390": [
         "n02526121",
@@ -1565,11 +1565,11 @@
     ],
     "391": [
         "n02536864",
-        "coho, cohoe, coho salmon, blue jack, silver salmon, Oncorhynchus kisutch"
+        "coho"
     ],
     "392": [
         "n02606052",
-        "rock beauty, Holocanthus tricolor"
+        "rock beauty"
     ],
     "393": [
         "n02607072",
@@ -1581,7 +1581,7 @@
     ],
     "395": [
         "n02641379",
-        "gar, garfish, garpike, billfish, Lepisosteus osseus"
+        "gar"
     ],
     "396": [
         "n02643566",
@@ -1589,7 +1589,7 @@
     ],
     "397": [
         "n02655020",
-        "puffer, pufferfish, blowfish, globefish"
+        "puffer"
     ],
     "398": [
         "n02666196",
@@ -1601,11 +1601,11 @@
     ],
     "400": [
         "n02669723",
-        "academic gown, academic robe, judge's robe"
+        "academic gown"
     ],
     "401": [
         "n02672831",
-        "accordion, piano accordion, squeeze box"
+        "accordion"
     ],
     "402": [
         "n02676566",
@@ -1613,7 +1613,7 @@
     ],
     "403": [
         "n02687172",
-        "aircraft carrier, carrier, flattop, attack aircraft carrier"
+        "aircraft carrier"
     ],
     "404": [
         "n02690373",
@@ -1621,7 +1621,7 @@
     ],
     "405": [
         "n02692877",
-        "airship, dirigible"
+        "airship"
     ],
     "406": [
         "n02699494",
@@ -1633,7 +1633,7 @@
     ],
     "408": [
         "n02704792",
-        "amphibian, amphibious vehicle"
+        "amphibian"
     ],
     "409": [
         "n02708093",
@@ -1641,7 +1641,7 @@
     ],
     "410": [
         "n02727426",
-        "apiary, bee house"
+        "apiary"
     ],
     "411": [
         "n02730930",
@@ -1649,23 +1649,23 @@
     ],
     "412": [
         "n02747177",
-        "ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin"
+        "ashcan"
     ],
     "413": [
         "n02749479",
-        "assault rifle, assault gun"
+        "assault rifle"
     ],
     "414": [
         "n02769748",
-        "backpack, back pack, knapsack, packsack, rucksack, haversack"
+        "backpack"
     ],
     "415": [
         "n02776631",
-        "bakery, bakeshop, bakehouse"
+        "bakery"
     ],
     "416": [
         "n02777292",
-        "balance beam, beam"
+        "balance beam"
     ],
     "417": [
         "n02782093",
@@ -1673,7 +1673,7 @@
     ],
     "418": [
         "n02783161",
-        "ballpoint, ballpoint pen, ballpen, Biro"
+        "ballpoint"
     ],
     "419": [
         "n02786058",
@@ -1685,7 +1685,7 @@
     ],
     "421": [
         "n02788148",
-        "bannister, banister, balustrade, balusters, handrail"
+        "bannister"
     ],
     "422": [
         "n02790996",
@@ -1709,11 +1709,11 @@
     ],
     "427": [
         "n02795169",
-        "barrel, cask"
+        "barrel"
     ],
     "428": [
         "n02797295",
-        "barrow, garden cart, lawn cart, wheelbarrow"
+        "barrow"
     ],
     "429": [
         "n02799071",
@@ -1733,43 +1733,43 @@
     ],
     "433": [
         "n02807133",
-        "Unknown Class (n02807133)"
+        "bathing cap"
     ],
     "434": [
         "n02808304",
-        "bathing cap, swimming cap"
+        "bath towel"
     ],
     "435": [
         "n02808440",
-        "bath towel"
+        "bathtub"
     ],
     "436": [
         "n02814533",
-        "bathtub, bathing tub, bath, tub"
+        "beach wagon"
     ],
     "437": [
         "n02814860",
-        "beach wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon"
+        "beacon"
     ],
     "438": [
         "n02815834",
-        "beacon, lighthouse, beacon light, pharos"
+        "beaker"
     ],
     "439": [
         "n02817516",
-        "beaker"
+        "bearskin"
     ],
     "440": [
         "n02823428",
-        "bearskin, busby, shako"
+        "beer bottle"
     ],
     "441": [
         "n02823750",
-        "beer bottle"
+        "beer glass"
     ],
     "442": [
         "n02825657",
-        "beer glass"
+        "bell cote"
     ],
     "443": [
         "n02834397",
@@ -1777,19 +1777,19 @@
     ],
     "444": [
         "n02835271",
-        "bicycle-built-for-two, tandem bicycle, tandem"
+        "bicycle-built-for-two"
     ],
     "445": [
         "n02837789",
-        "bikini, two-piece"
+        "bikini"
     ],
     "446": [
         "n02840245",
-        "binder, ring-binder"
+        "binder"
     ],
     "447": [
         "n02841315",
-        "binoculars, field glasses, opera glasses"
+        "binoculars"
     ],
     "448": [
         "n02843684",
@@ -1801,15 +1801,15 @@
     ],
     "450": [
         "n02860847",
-        "bobsled, bobsleigh, bob"
+        "bobsled"
     ],
     "451": [
         "n02865351",
-        "bolo tie, bolo, bola tie, bola"
+        "bolo tie"
     ],
     "452": [
         "n02869837",
-        "bonnet, poke bonnet"
+        "bonnet"
     ],
     "453": [
         "n02870880",
@@ -1817,7 +1817,7 @@
     ],
     "454": [
         "n02871525",
-        "bookshop, bookstore, bookstall"
+        "bookshop"
     ],
     "455": [
         "n02877765",
@@ -1829,23 +1829,23 @@
     ],
     "457": [
         "n02883205",
-        "bow tie, bow-tie, bowtie"
+        "bow tie"
     ],
     "458": [
         "n02892201",
-        "brass, memorial tablet, plaque"
+        "brass"
     ],
     "459": [
         "n02892767",
-        "brassiere, bra, bandeau"
+        "brassiere"
     ],
     "460": [
         "n02894605",
-        "breakwater, groin, groyne, mole, bulwark, seawall, jetty"
+        "breakwater"
     ],
     "461": [
         "n02895154",
-        "breastplate, aegis, egis"
+        "breastplate"
     ],
     "462": [
         "n02906734",
@@ -1853,7 +1853,7 @@
     ],
     "463": [
         "n02909870",
-        "bucket, pail"
+        "bucket"
     ],
     "464": [
         "n02910353",
@@ -1865,23 +1865,23 @@
     ],
     "466": [
         "n02917067",
-        "bullet train, bullet"
+        "bullet train"
     ],
     "467": [
         "n02927161",
-        "butcher shop, meat market"
+        "butcher shop"
     ],
     "468": [
         "n02930766",
-        "cab, hack, taxi, taxicab"
+        "cab"
     ],
     "469": [
         "n02939185",
-        "caldron, cauldron"
+        "caldron"
     ],
     "470": [
         "n02948072",
-        "candle, taper, wax light"
+        "candle"
     ],
     "471": [
         "n02950826",
@@ -1893,7 +1893,7 @@
     ],
     "473": [
         "n02951585",
-        "can opener, tin opener"
+        "can opener"
     ],
     "474": [
         "n02963159",
@@ -1905,11 +1905,11 @@
     ],
     "476": [
         "n02966193",
-        "carousel, carrousel, merry-go-round, roundabout, whirligig"
+        "carousel"
     ],
     "477": [
         "n02966687",
-        "carpenter's kit, tool kit"
+        "carpenter's kit"
     ],
     "478": [
         "n02971356",
@@ -1921,7 +1921,7 @@
     ],
     "480": [
         "n02977058",
-        "cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM"
+        "cash machine"
     ],
     "481": [
         "n02978881",
@@ -1945,11 +1945,11 @@
     ],
     "486": [
         "n02992211",
-        "cello, violoncello"
+        "cello"
     ],
     "487": [
         "n02992529",
-        "cellular telephone, cellular phone, cellphone, cell, mobile phone"
+        "cellular telephone"
     ],
     "488": [
         "n02999410",
@@ -1961,11 +1961,11 @@
     ],
     "490": [
         "n03000247",
-        "chain mail, ring mail, mail, chain armor, chain armour, ring armor, ring armour"
+        "chain mail"
     ],
     "491": [
         "n03000684",
-        "chain saw, chainsaw"
+        "chain saw"
     ],
     "492": [
         "n03014705",
@@ -1973,15 +1973,15 @@
     ],
     "493": [
         "n03016953",
-        "chiffonier, commode"
+        "chiffonier"
     ],
     "494": [
         "n03017168",
-        "chime, bell, gong"
+        "chime"
     ],
     "495": [
         "n03018349",
-        "china cabinet, china closet"
+        "china cabinet"
     ],
     "496": [
         "n03026506",
@@ -1989,15 +1989,15 @@
     ],
     "497": [
         "n03028079",
-        "church, church building"
+        "church"
     ],
     "498": [
         "n03032252",
-        "cinema, movie theater, movie theatre, movie house, picture palace"
+        "cinema"
     ],
     "499": [
         "n03041632",
-        "cleaver, meat cleaver, chopper"
+        "cleaver"
     ],
     "500": [
         "n03042490",
@@ -2009,7 +2009,7 @@
     ],
     "502": [
         "n03047690",
-        "clog, geta, patten, sabot"
+        "clog"
     ],
     "503": [
         "n03062245",
@@ -2025,7 +2025,7 @@
     ],
     "506": [
         "n03065424",
-        "coil, spiral, volute, whorl, helix"
+        "coil"
     ],
     "507": [
         "n03075370",
@@ -2033,15 +2033,15 @@
     ],
     "508": [
         "n03085013",
-        "computer keyboard, keypad"
+        "computer keyboard"
     ],
     "509": [
         "n03089624",
-        "confectionery, confectionary, candy store"
+        "confectionery"
     ],
     "510": [
         "n03095699",
-        "container ship, containership, container vessel"
+        "container ship"
     ],
     "511": [
         "n03100240",
@@ -2049,11 +2049,11 @@
     ],
     "512": [
         "n03109150",
-        "corkscrew, bottle screw"
+        "corkscrew"
     ],
     "513": [
         "n03110669",
-        "cornet, horn, trumpet, trump"
+        "cornet"
     ],
     "514": [
         "n03124043",
@@ -2061,7 +2061,7 @@
     ],
     "515": [
         "n03124170",
-        "cowboy hat, ten-gallon hat"
+        "cowboy hat"
     ],
     "516": [
         "n03125729",
@@ -2081,7 +2081,7 @@
     ],
     "520": [
         "n03131574",
-        "crib, cot"
+        "crib"
     ],
     "521": [
         "n03133878",
@@ -2101,347 +2101,347 @@
     ],
     "525": [
         "n03160309",
-        "desk"
+        "dam"
     ],
     "526": [
         "n03179701",
-        "desktop computer"
+        "desk"
     ],
     "527": [
         "n03180011",
-        "dial telephone, dial phone"
+        "desktop computer"
     ],
     "528": [
         "n03187595",
-        "diaper, nappy, napkin"
+        "dial telephone"
     ],
     "529": [
         "n03188531",
-        "digital clock"
+        "diaper"
     ],
     "530": [
         "n03196217",
-        "digital watch"
+        "digital clock"
     ],
     "531": [
         "n03197337",
-        "dining table, board"
+        "digital watch"
     ],
     "532": [
         "n03201208",
-        "dishrag, dishcloth"
+        "dining table"
     ],
     "533": [
         "n03207743",
-        "dishwasher, dish washer, dishwashing machine"
+        "dishrag"
     ],
     "534": [
         "n03207941",
-        "disk brake, disc brake"
+        "dishwasher"
     ],
     "535": [
         "n03208938",
-        "dock, dockage, docking facility"
+        "disk brake"
     ],
     "536": [
         "n03216828",
-        "dogsled, dog sleigh, dog sled"
+        "dock"
     ],
     "537": [
         "n03218198",
-        "dome"
+        "dogsled"
     ],
     "538": [
         "n03220513",
-        "doormat, welcome mat"
+        "dome"
     ],
     "539": [
         "n03223299",
-        "drilling platform, offshore rig"
+        "doormat"
     ],
     "540": [
         "n03240683",
-        "drum, membranophone, tympan"
+        "drilling platform"
     ],
     "541": [
         "n03249569",
-        "drumstick"
+        "drum"
     ],
     "542": [
         "n03250847",
-        "dumbbell"
+        "drumstick"
     ],
     "543": [
         "n03255030",
-        "Dutch oven"
+        "dumbbell"
     ],
     "544": [
         "n03259280",
-        "electric fan, blower"
+        "Dutch oven"
     ],
     "545": [
         "n03271574",
-        "electric guitar"
+        "electric fan"
     ],
     "546": [
         "n03272010",
-        "electric locomotive"
+        "electric guitar"
     ],
     "547": [
         "n03272562",
-        "entertainment center"
+        "electric locomotive"
     ],
     "548": [
         "n03290653",
-        "envelope"
+        "entertainment center"
     ],
     "549": [
         "n03291819",
-        "espresso maker"
+        "envelope"
     ],
     "550": [
         "n03297495",
-        "face powder"
+        "espresso maker"
     ],
     "551": [
         "n03314780",
-        "feather boa, boa"
+        "face powder"
     ],
     "552": [
         "n03325584",
-        "file, file cabinet, filing cabinet"
+        "feather boa"
     ],
     "553": [
         "n03337140",
-        "fireboat"
+        "file"
     ],
     "554": [
         "n03344393",
-        "fire engine, fire truck"
+        "fireboat"
     ],
     "555": [
         "n03345487",
-        "fire screen, fireguard"
+        "fire engine"
     ],
     "556": [
         "n03347037",
-        "flagpole, flagstaff"
+        "fire screen"
     ],
     "557": [
         "n03355925",
-        "flute, transverse flute"
+        "flagpole"
     ],
     "558": [
         "n03372029",
-        "folding chair"
+        "flute"
     ],
     "559": [
         "n03376595",
-        "football helmet"
+        "folding chair"
     ],
     "560": [
         "n03379051",
-        "forklift"
+        "football helmet"
     ],
     "561": [
         "n03384352",
-        "fountain"
+        "forklift"
     ],
     "562": [
         "n03388043",
-        "fountain pen"
+        "fountain"
     ],
     "563": [
         "n03388183",
-        "four-poster"
+        "fountain pen"
     ],
     "564": [
         "n03388549",
-        "freight car"
+        "four-poster"
     ],
     "565": [
         "n03393912",
-        "French horn, horn"
+        "freight car"
     ],
     "566": [
         "n03394916",
-        "frying pan, frypan, skillet"
+        "French horn"
     ],
     "567": [
         "n03400231",
-        "fur coat"
+        "frying pan"
     ],
     "568": [
         "n03404251",
-        "garbage truck, dustcart"
+        "fur coat"
     ],
     "569": [
         "n03417042",
-        "gasmask, respirator, gas helmet"
+        "garbage truck"
     ],
     "570": [
         "n03424325",
-        "gas pump, gasoline pump, petrol pump, island dispenser"
+        "gasmask"
     ],
     "571": [
         "n03425413",
-        "goblet"
+        "gas pump"
     ],
     "572": [
         "n03443371",
-        "go-kart"
+        "goblet"
     ],
     "573": [
         "n03444034",
-        "golf ball"
+        "go-kart"
     ],
     "574": [
         "n03445777",
-        "golfcart, golf cart"
+        "golf ball"
     ],
     "575": [
         "n03445924",
-        "gondola"
+        "golfcart"
     ],
     "576": [
         "n03447447",
-        "gong, tam-tam"
+        "gondola"
     ],
     "577": [
         "n03447721",
-        "gown"
+        "gong"
     ],
     "578": [
         "n03450230",
-        "grand piano, grand"
+        "gown"
     ],
     "579": [
         "n03452741",
-        "greenhouse, nursery, glasshouse"
+        "grand piano"
     ],
     "580": [
         "n03457902",
-        "grille, radiator grille"
+        "greenhouse"
     ],
     "581": [
         "n03459775",
-        "grocery store, grocery, food market, market"
+        "grille"
     ],
     "582": [
         "n03461385",
-        "guillotine"
+        "grocery store"
     ],
     "583": [
         "n03467068",
-        "hair slide"
+        "guillotine"
     ],
     "584": [
         "n03476684",
-        "half track"
+        "hair slide"
     ],
     "585": [
         "n03476991",
-        "hammer"
+        "hair spray"
     ],
     "586": [
         "n03478589",
-        "hamper"
+        "half track"
     ],
     "587": [
         "n03481172",
-        "hand blower, blow dryer, blow-dryer, hair dryer, hair-dryer"
+        "hammer"
     ],
     "588": [
         "n03482405",
-        "hand-held computer, hand-held device"
+        "hamper"
     ],
     "589": [
         "n03483316",
-        "handkerchief, hankie, hanky, hankey"
+        "hand blower"
     ],
     "590": [
         "n03485407",
-        "hard disc, hard disk, fixed disk"
+        "hand-held computer"
     ],
     "591": [
         "n03485794",
-        "harmonica, mouth organ, harp, mouth harp"
+        "handkerchief"
     ],
     "592": [
         "n03492542",
-        "harp"
+        "hard disc"
     ],
     "593": [
         "n03494278",
-        "harvester, reaper"
+        "harmonica"
     ],
     "594": [
         "n03495258",
-        "hatchet"
+        "harp"
     ],
     "595": [
         "n03496892",
-        "Unknown Class (n03496892)"
+        "harvester"
     ],
     "596": [
         "n03498962",
-        "holster"
+        "hatchet"
     ],
     "597": [
         "n03527444",
-        "home theater, home theatre"
+        "holster"
     ],
     "598": [
         "n03529860",
-        "honeycomb"
+        "home theater"
     ],
     "599": [
         "n03530642",
-        "hook, claw"
+        "honeycomb"
     ],
     "600": [
         "n03532672",
-        "hoopskirt, crinoline"
+        "hook"
     ],
     "601": [
         "n03534580",
-        "horizontal bar, high bar"
+        "hoopskirt"
     ],
     "602": [
         "n03535780",
-        "horse cart, horse-cart"
+        "horizontal bar"
     ],
     "603": [
         "n03538406",
-        "hourglass"
+        "horse cart"
     ],
     "604": [
         "n03544143",
-        "iPod"
+        "hourglass"
     ],
     "605": [
         "n03584254",
-        "iron, smoothing iron"
+        "iPod"
     ],
     "606": [
         "n03584829",
-        "jack-o'-lantern"
+        "iron"
     ],
     "607": [
         "n03590841",
-        "jean, blue jean, denim"
+        "jack-o'-lantern"
     ],
     "608": [
         "n03594734",
-        "jeep, landrover"
+        "jean"
     ],
     "609": [
         "n03594945",
-        "Unknown Class (n03594945)"
+        "jeep"
     ],
     "610": [
         "n03595614",
-        "jersey, T-shirt, tee shirt"
+        "jersey"
     ],
     "611": [
         "n03598930",
@@ -2449,7 +2449,7 @@
     ],
     "612": [
         "n03599486",
-        "jinrikisha, ricksha, rickshaw"
+        "jinrikisha"
     ],
     "613": [
         "n03602883",
@@ -2469,7 +2469,7 @@
     ],
     "617": [
         "n03630383",
-        "lab coat, laboratory coat"
+        "lab coat"
     ],
     "618": [
         "n03633091",
@@ -2477,23 +2477,23 @@
     ],
     "619": [
         "n03637318",
-        "lampshade, lamp shade"
+        "lampshade"
     ],
     "620": [
         "n03642806",
-        "laptop, laptop computer"
+        "laptop"
     ],
     "621": [
         "n03649909",
-        "lawn mower, mower"
+        "lawn mower"
     ],
     "622": [
         "n03657121",
-        "lens cap, lens cover"
+        "lens cap"
     ],
     "623": [
         "n03658185",
-        "letter opener, paper knife, paperknife"
+        "letter opener"
     ],
     "624": [
         "n03661043",
@@ -2505,19 +2505,19 @@
     ],
     "626": [
         "n03666591",
-        "lighter, light, igniter, ignitor"
+        "lighter"
     ],
     "627": [
         "n03670208",
-        "limousine, limo"
+        "limousine"
     ],
     "628": [
         "n03673027",
-        "liner, ocean liner"
+        "liner"
     ],
     "629": [
         "n03676483",
-        "lipstick, lip rouge"
+        "lipstick"
     ],
     "630": [
         "n03680355",
@@ -2529,15 +2529,15 @@
     ],
     "632": [
         "n03691459",
-        "loudspeaker, speaker, speaker unit, loudspeaker system, speaker system"
+        "loudspeaker"
     ],
     "633": [
         "n03692522",
-        "loupe, jeweler's loupe"
+        "loupe"
     ],
     "634": [
         "n03697007",
-        "lumbermill, sawmill"
+        "lumbermill"
     ],
     "635": [
         "n03706229",
@@ -2545,11 +2545,11 @@
     ],
     "636": [
         "n03709823",
-        "mailbag, postbag"
+        "mailbag"
     ],
     "637": [
         "n03710193",
-        "mailbox, letter box"
+        "mailbox"
     ],
     "638": [
         "n03710637",
@@ -2557,7 +2557,7 @@
     ],
     "639": [
         "n03710721",
-        "maillot, tank suit"
+        "maillot"
     ],
     "640": [
         "n03717622",
@@ -2569,7 +2569,7 @@
     ],
     "642": [
         "n03721384",
-        "marimba, xylophone"
+        "marimba"
     ],
     "643": [
         "n03724870",
@@ -2585,7 +2585,7 @@
     ],
     "646": [
         "n03733281",
-        "maze, labyrinth"
+        "maze"
     ],
     "647": [
         "n03733805",
@@ -2593,19 +2593,19 @@
     ],
     "648": [
         "n03742115",
-        "medicine chest, medicine cabinet"
+        "medicine chest"
     ],
     "649": [
         "n03743016",
-        "megalith, megalithic structure"
+        "megalith"
     ],
     "650": [
         "n03759954",
-        "microphone, mike"
+        "microphone"
     ],
     "651": [
         "n03761084",
-        "microwave, microwave oven"
+        "microwave"
     ],
     "652": [
         "n03763968",
@@ -2621,7 +2621,7 @@
     ],
     "655": [
         "n03770439",
-        "miniskirt, mini"
+        "miniskirt"
     ],
     "656": [
         "n03770679",
@@ -2641,7 +2641,7 @@
     ],
     "660": [
         "n03776460",
-        "mobile home, manufactured home"
+        "mobile home"
     ],
     "661": [
         "n03777568",
@@ -2681,11 +2681,11 @@
     ],
     "670": [
         "n03791053",
-        "motor scooter, scooter"
+        "motor scooter"
     ],
     "671": [
         "n03792782",
-        "mountain bike, all-terrain bike, off-roader"
+        "mountain bike"
     ],
     "672": [
         "n03792972",
@@ -2693,7 +2693,7 @@
     ],
     "673": [
         "n03793489",
-        "mouse, computer mouse"
+        "mouse"
     ],
     "674": [
         "n03794056",
@@ -2713,1211 +2713,1211 @@
     ],
     "678": [
         "n03814639",
-        "necklace"
+        "neck brace"
     ],
     "679": [
         "n03814906",
-        "nipple"
+        "necklace"
     ],
     "680": [
         "n03825788",
-        "notebook, notebook computer"
+        "nipple"
     ],
     "681": [
         "n03832673",
-        "obelisk"
+        "notebook"
     ],
     "682": [
         "n03837869",
-        "oboe, hautboy, hautbois"
+        "obelisk"
     ],
     "683": [
         "n03838899",
-        "ocarina, sweet potato"
+        "oboe"
     ],
     "684": [
         "n03840681",
-        "odometer, hodometer, mileometer, milometer"
+        "ocarina"
     ],
     "685": [
         "n03841143",
-        "oil filter"
+        "odometer"
     ],
     "686": [
         "n03843555",
-        "organ, pipe organ"
+        "oil filter"
     ],
     "687": [
         "n03854065",
-        "overskirt"
+        "organ"
     ],
     "688": [
         "n03857828",
-        "oxcart"
+        "oscilloscope"
     ],
     "689": [
         "n03866082",
-        "oxygen mask"
+        "overskirt"
     ],
     "690": [
         "n03868242",
-        "packet"
+        "oxcart"
     ],
     "691": [
         "n03868863",
-        "paddle, boat paddle"
+        "oxygen mask"
     ],
     "692": [
         "n03871628",
-        "paddlewheel, paddle wheel"
+        "packet"
     ],
     "693": [
         "n03873416",
-        "padlock"
+        "paddle"
     ],
     "694": [
         "n03874293",
-        "paintbrush"
+        "paddlewheel"
     ],
     "695": [
         "n03874599",
-        "pajama, pyjama, pj's, jammies"
+        "padlock"
     ],
     "696": [
         "n03876231",
-        "palace"
+        "paintbrush"
     ],
     "697": [
         "n03877472",
-        "panpipe, pandean pipe, syrinx"
+        "pajama"
     ],
     "698": [
         "n03877845",
-        "paper towel"
+        "palace"
     ],
     "699": [
         "n03884397",
-        "parachute, chute"
+        "panpipe"
     ],
     "700": [
         "n03887697",
-        "parallel bars, bars"
+        "paper towel"
     ],
     "701": [
         "n03888257",
-        "park bench"
+        "parachute"
     ],
     "702": [
         "n03888605",
-        "parking meter"
+        "parallel bars"
     ],
     "703": [
         "n03891251",
-        "passenger car, coach, carriage"
+        "park bench"
     ],
     "704": [
         "n03891332",
-        "patio, terrace"
+        "parking meter"
     ],
     "705": [
         "n03895866",
-        "pay-phone, pay-station"
+        "passenger car"
     ],
     "706": [
         "n03899768",
-        "pedestal, plinth, footstall"
+        "patio"
     ],
     "707": [
         "n03902125",
-        "pencil box, pencil case"
+        "pay-phone"
     ],
     "708": [
         "n03903868",
-        "pencil sharpener"
+        "pedestal"
     ],
     "709": [
         "n03908618",
-        "perfume, essence"
+        "pencil box"
     ],
     "710": [
         "n03908714",
-        "Petri dish"
+        "pencil sharpener"
     ],
     "711": [
         "n03916031",
-        "photocopier"
+        "perfume"
     ],
     "712": [
         "n03920288",
-        "pick, plectrum, plectron"
+        "Petri dish"
     ],
     "713": [
         "n03924679",
-        "pickelhaube"
+        "photocopier"
     ],
     "714": [
         "n03929660",
-        "picket fence, paling"
+        "pick"
     ],
     "715": [
         "n03929855",
-        "pickup, pickup truck"
+        "pickelhaube"
     ],
     "716": [
         "n03930313",
-        "pier"
+        "picket fence"
     ],
     "717": [
         "n03930630",
-        "piggy bank, penny bank"
+        "pickup"
     ],
     "718": [
         "n03933933",
-        "pill bottle"
+        "pier"
     ],
     "719": [
         "n03935335",
-        "pillow"
+        "piggy bank"
     ],
     "720": [
         "n03937543",
-        "pineapple, ananas"
+        "pill bottle"
     ],
     "721": [
         "n03938244",
-        "ping-pong ball"
+        "pillow"
     ],
     "722": [
         "n03942813",
-        "pinwheel"
+        "ping-pong ball"
     ],
     "723": [
         "n03944341",
-        "pirate, pirate ship"
+        "pinwheel"
     ],
     "724": [
         "n03947888",
-        "pitcher, ewer"
+        "pirate"
     ],
     "725": [
         "n03950228",
-        "plane, carpenter's plane, woodworking plane"
+        "pitcher"
     ],
     "726": [
         "n03954731",
-        "planetarium"
+        "plane"
     ],
     "727": [
         "n03956157",
-        "plastic bag"
+        "planetarium"
     ],
     "728": [
         "n03958227",
-        "plate rack"
+        "plastic bag"
     ],
     "729": [
         "n03961711",
-        "plow, plough"
+        "plate rack"
     ],
     "730": [
         "n03967562",
-        "plunger, plumber's helper"
+        "plow"
     ],
     "731": [
         "n03970156",
-        "Polaroid camera, Polaroid Land camera"
+        "plunger"
     ],
     "732": [
         "n03976467",
-        "pole"
+        "Polaroid camera"
     ],
     "733": [
         "n03976657",
-        "police van, police wagon, paddy wagon, patrol wagon, wagon, black Maria"
+        "pole"
     ],
     "734": [
         "n03977966",
-        "poncho"
+        "police van"
     ],
     "735": [
         "n03980874",
-        "pool table, billiard table, snooker table"
+        "poncho"
     ],
     "736": [
         "n03982430",
-        "pop bottle, soda bottle"
+        "pool table"
     ],
     "737": [
         "n03983396",
-        "pot, flowerpot"
+        "pop bottle"
     ],
     "738": [
         "n03991062",
-        "power drill"
+        "pot"
     ],
     "739": [
         "n03992509",
-        "prayer rug, prayer mat"
+        "potter's wheel"
     ],
     "740": [
         "n03995372",
-        "printer"
+        "power drill"
     ],
     "741": [
         "n03998194",
-        "prison, prison house"
+        "prayer rug"
     ],
     "742": [
         "n04004767",
-        "projectile, missile"
+        "printer"
     ],
     "743": [
         "n04005630",
-        "projector"
+        "prison"
     ],
     "744": [
         "n04008634",
-        "puck, hockey puck"
+        "projectile"
     ],
     "745": [
         "n04009552",
-        "punching bag, punch bag, punching ball, punchball"
+        "projector"
     ],
     "746": [
         "n04019541",
-        "purse"
+        "puck"
     ],
     "747": [
         "n04023962",
-        "quill, quill pen"
+        "punching bag"
     ],
     "748": [
         "n04026417",
-        "quilt, comforter, comfort, puff"
+        "purse"
     ],
     "749": [
         "n04033901",
-        "racer, race car, racing car"
+        "quill"
     ],
     "750": [
         "n04033995",
-        "racket, racquet"
+        "quilt"
     ],
     "751": [
         "n04037443",
-        "radiator"
+        "racer"
     ],
     "752": [
         "n04039381",
-        "radio, wireless"
+        "racket"
     ],
     "753": [
         "n04040759",
-        "radio telescope, radio reflector"
+        "radiator"
     ],
     "754": [
         "n04041544",
-        "rain barrel"
+        "radio"
     ],
     "755": [
         "n04044716",
-        "recreational vehicle, RV, R.V."
+        "radio telescope"
     ],
     "756": [
         "n04049303",
-        "reel"
+        "rain barrel"
     ],
     "757": [
         "n04065272",
-        "reflex camera"
+        "recreational vehicle"
     ],
     "758": [
         "n04067472",
-        "refrigerator, icebox"
+        "reel"
     ],
     "759": [
         "n04069434",
-        "remote control, remote"
+        "reflex camera"
     ],
     "760": [
         "n04070727",
-        "restaurant, eating house, eating place, eatery"
+        "refrigerator"
     ],
     "761": [
         "n04074963",
-        "revolver, six-gun, six-shooter"
+        "remote control"
     ],
     "762": [
         "n04081281",
-        "rifle"
+        "restaurant"
     ],
     "763": [
         "n04086273",
-        "rocking chair, rocker"
+        "revolver"
     ],
     "764": [
         "n04090263",
-        "rotisserie"
+        "rifle"
     ],
     "765": [
         "n04099969",
-        "rubber eraser, rubber, pencil eraser"
+        "rocking chair"
     ],
     "766": [
         "n04111531",
-        "rugby ball"
+        "rotisserie"
     ],
     "767": [
         "n04116512",
-        "rule, ruler"
+        "rubber eraser"
     ],
     "768": [
         "n04118538",
-        "running shoe"
+        "rugby ball"
     ],
     "769": [
         "n04118776",
-        "safe"
+        "rule"
     ],
     "770": [
         "n04120489",
-        "safety pin"
+        "running shoe"
     ],
     "771": [
         "n04125021",
-        "saltshaker, salt shaker"
+        "safe"
     ],
     "772": [
         "n04127249",
-        "sandal"
+        "safety pin"
     ],
     "773": [
         "n04131690",
-        "sarong"
+        "saltshaker"
     ],
     "774": [
         "n04133789",
-        "sax, saxophone"
+        "sandal"
     ],
     "775": [
         "n04136333",
-        "scabbard"
+        "sarong"
     ],
     "776": [
         "n04141076",
-        "scale, weighing machine"
+        "sax"
     ],
     "777": [
         "n04141327",
-        "Unknown Class (n04141327)"
+        "scabbard"
     ],
     "778": [
         "n04141975",
-        "school bus"
+        "scale"
     ],
     "779": [
         "n04146614",
-        "schooner"
+        "school bus"
     ],
     "780": [
         "n04147183",
-        "scoreboard"
+        "schooner"
     ],
     "781": [
         "n04149813",
-        "screen, CRT screen"
+        "scoreboard"
     ],
     "782": [
         "n04152593",
-        "screw"
+        "screen"
     ],
     "783": [
         "n04153751",
-        "screwdriver"
+        "screw"
     ],
     "784": [
         "n04154565",
-        "seat belt, seatbelt"
+        "screwdriver"
     ],
     "785": [
         "n04162706",
-        "sewing machine"
+        "seat belt"
     ],
     "786": [
         "n04179913",
-        "shield, buckler"
+        "sewing machine"
     ],
     "787": [
         "n04192698",
-        "shoe shop, shoe-shop, shoe store"
+        "shield"
     ],
     "788": [
         "n04200800",
-        "shoji"
+        "shoe shop"
     ],
     "789": [
         "n04201297",
-        "shopping basket"
+        "shoji"
     ],
     "790": [
         "n04204238",
-        "shopping cart"
+        "shopping basket"
     ],
     "791": [
         "n04204347",
-        "shovel"
+        "shopping cart"
     ],
     "792": [
         "n04208210",
-        "shower cap"
+        "shovel"
     ],
     "793": [
         "n04209133",
-        "ski"
+        "shower cap"
     ],
     "794": [
         "n04209239",
-        "ski mask"
+        "shower curtain"
     ],
     "795": [
         "n04228054",
-        "sleeping bag"
+        "ski"
     ],
     "796": [
         "n04229816",
-        "slide rule, slipstick"
+        "ski mask"
     ],
     "797": [
         "n04235860",
-        "sliding door"
+        "sleeping bag"
     ],
     "798": [
         "n04238763",
-        "slot, one-armed bandit"
+        "slide rule"
     ],
     "799": [
         "n04239074",
-        "snorkel"
+        "sliding door"
     ],
     "800": [
         "n04243546",
-        "snowmobile"
+        "slot"
     ],
     "801": [
         "n04251144",
-        "snowplow, snowplough"
+        "snorkel"
     ],
     "802": [
         "n04252077",
-        "soap dispenser"
+        "snowmobile"
     ],
     "803": [
         "n04252225",
-        "soccer ball"
+        "snowplow"
     ],
     "804": [
         "n04254120",
-        "sock"
+        "soap dispenser"
     ],
     "805": [
         "n04254680",
-        "solar dish, solar collector, solar furnace"
+        "soccer ball"
     ],
     "806": [
         "n04254777",
-        "sombrero"
+        "sock"
     ],
     "807": [
         "n04258138",
-        "soup bowl"
+        "solar dish"
     ],
     "808": [
         "n04259630",
-        "space bar"
+        "sombrero"
     ],
     "809": [
         "n04263257",
-        "space heater"
+        "soup bowl"
     ],
     "810": [
         "n04264628",
-        "space shuttle"
+        "space bar"
     ],
     "811": [
         "n04265275",
-        "spatula"
+        "space heater"
     ],
     "812": [
         "n04266014",
-        "speedboat"
+        "space shuttle"
     ],
     "813": [
         "n04270147",
-        "spider web, spider's web"
+        "spatula"
     ],
     "814": [
         "n04273569",
-        "spindle"
+        "speedboat"
     ],
     "815": [
         "n04275548",
-        "sports car, sport car"
+        "spider web"
     ],
     "816": [
         "n04277352",
-        "spotlight, spot"
+        "spindle"
     ],
     "817": [
         "n04285008",
-        "stage"
+        "sports car"
     ],
     "818": [
         "n04286575",
-        "steam locomotive"
+        "spotlight"
     ],
     "819": [
         "n04296562",
-        "steel arch bridge"
+        "stage"
     ],
     "820": [
         "n04310018",
-        "steel drum"
+        "steam locomotive"
     ],
     "821": [
         "n04311004",
-        "stethoscope"
+        "steel arch bridge"
     ],
     "822": [
         "n04311174",
-        "stole"
+        "steel drum"
     ],
     "823": [
         "n04317175",
-        "stone wall"
+        "stethoscope"
     ],
     "824": [
         "n04325704",
-        "stopwatch, stop watch"
+        "stole"
     ],
     "825": [
         "n04326547",
-        "stove"
+        "stone wall"
     ],
     "826": [
         "n04328186",
-        "strainer"
+        "stopwatch"
     ],
     "827": [
         "n04330267",
-        "streetcar, tram, tramcar, trolley, trolley car"
+        "stove"
     ],
     "828": [
         "n04332243",
-        "stretcher"
+        "strainer"
     ],
     "829": [
         "n04335435",
-        "studio couch, day bed"
+        "streetcar"
     ],
     "830": [
         "n04336792",
-        "stupa, tope"
+        "stretcher"
     ],
     "831": [
         "n04344873",
-        "submarine, pigboat, sub, U-boat"
+        "studio couch"
     ],
     "832": [
         "n04346328",
-        "suit, suit of clothes"
+        "stupa"
     ],
     "833": [
         "n04347754",
-        "sundial"
+        "submarine"
     ],
     "834": [
         "n04350905",
-        "sunglass"
+        "suit"
     ],
     "835": [
         "n04355338",
-        "sunglasses, dark glasses, shades"
+        "sundial"
     ],
     "836": [
         "n04355933",
-        "sunscreen, sunblock, sun blocker"
+        "sunglass"
     ],
     "837": [
         "n04356056",
-        "suspension bridge"
+        "sunglasses"
     ],
     "838": [
         "n04357314",
-        "swab, swob, mop"
+        "sunscreen"
     ],
     "839": [
         "n04366367",
-        "sweatshirt"
+        "suspension bridge"
     ],
     "840": [
         "n04367480",
-        "swimming trunks, bathing trunks"
+        "swab"
     ],
     "841": [
         "n04370456",
-        "swing"
+        "sweatshirt"
     ],
     "842": [
         "n04371430",
-        "switch, electric switch, electrical switch"
+        "swimming trunks"
     ],
     "843": [
         "n04371774",
-        "syringe"
+        "swing"
     ],
     "844": [
         "n04372370",
-        "table lamp"
+        "switch"
     ],
     "845": [
         "n04376876",
-        "tank, army tank, armored combat vehicle, armoured combat vehicle"
+        "syringe"
     ],
     "846": [
         "n04380533",
-        "tape player"
+        "table lamp"
     ],
     "847": [
         "n04389033",
-        "teapot"
+        "tank"
     ],
     "848": [
         "n04392985",
-        "teddy, teddy bear"
+        "tape player"
     ],
     "849": [
         "n04398044",
-        "television, television system"
+        "teapot"
     ],
     "850": [
         "n04399382",
-        "tennis ball"
+        "teddy"
     ],
     "851": [
         "n04404412",
-        "thatch, thatched roof"
+        "television"
     ],
     "852": [
         "n04409515",
-        "thimble"
+        "tennis ball"
     ],
     "853": [
         "n04417672",
-        "thresher, thrasher, threshing machine"
+        "thatch"
     ],
     "854": [
         "n04418357",
-        "throne"
+        "theater curtain"
     ],
     "855": [
         "n04423845",
-        "tile roof"
+        "thimble"
     ],
     "856": [
         "n04428191",
-        "toaster"
+        "thresher"
     ],
     "857": [
         "n04429376",
-        "tobacco shop, tobacconist shop, tobacconist"
+        "throne"
     ],
     "858": [
         "n04435653",
-        "toilet seat"
+        "tile roof"
     ],
     "859": [
         "n04442312",
-        "torch"
+        "toaster"
     ],
     "860": [
         "n04443257",
-        "totem pole"
+        "tobacco shop"
     ],
     "861": [
         "n04447861",
-        "tow truck, tow car, wrecker"
+        "toilet seat"
     ],
     "862": [
         "n04456115",
-        "toyshop"
+        "torch"
     ],
     "863": [
         "n04458633",
-        "tractor"
+        "totem pole"
     ],
     "864": [
         "n04461696",
-        "trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi"
+        "tow truck"
     ],
     "865": [
         "n04462240",
-        "tray"
+        "toyshop"
     ],
     "866": [
         "n04465501",
-        "trench coat"
+        "tractor"
     ],
     "867": [
         "n04467665",
-        "tricycle, trike, velocipede"
+        "trailer truck"
     ],
     "868": [
         "n04476259",
-        "trimaran"
+        "tray"
     ],
     "869": [
         "n04479046",
-        "tripod"
+        "trench coat"
     ],
     "870": [
         "n04482393",
-        "triumphal arch"
+        "tricycle"
     ],
     "871": [
         "n04483307",
-        "trolleybus, trolley coach, trackless trolley"
+        "trimaran"
     ],
     "872": [
         "n04485082",
-        "trombone"
+        "tripod"
     ],
     "873": [
         "n04486054",
-        "tub, vat"
+        "triumphal arch"
     ],
     "874": [
         "n04487081",
-        "turnstile"
+        "trolleybus"
     ],
     "875": [
         "n04487394",
-        "typewriter keyboard"
+        "trombone"
     ],
     "876": [
         "n04493381",
-        "umbrella"
+        "tub"
     ],
     "877": [
         "n04501370",
-        "unicycle, monocycle"
+        "turnstile"
     ],
     "878": [
         "n04505470",
-        "upright, upright piano"
+        "typewriter keyboard"
     ],
     "879": [
         "n04507155",
-        "vacuum, vacuum cleaner"
+        "umbrella"
     ],
     "880": [
         "n04509417",
-        "Unknown Class (n04509417)"
+        "unicycle"
     ],
     "881": [
         "n04515003",
-        "vault"
+        "upright"
     ],
     "882": [
         "n04517823",
-        "velvet"
+        "vacuum"
     ],
     "883": [
         "n04522168",
-        "vending machine"
+        "vase"
     ],
     "884": [
         "n04523525",
-        "vestment"
+        "vault"
     ],
     "885": [
         "n04525038",
-        "viaduct"
+        "velvet"
     ],
     "886": [
         "n04525305",
-        "violin, fiddle"
+        "vending machine"
     ],
     "887": [
         "n04532106",
-        "volleyball"
+        "vestment"
     ],
     "888": [
         "n04532670",
-        "waffle iron"
+        "viaduct"
     ],
     "889": [
         "n04536866",
-        "wall clock"
+        "violin"
     ],
     "890": [
         "n04540053",
-        "wallet, billfold, notecase, pocketbook"
+        "volleyball"
     ],
     "891": [
         "n04542943",
-        "wardrobe, closet, press"
+        "waffle iron"
     ],
     "892": [
         "n04548280",
-        "warplane, military plane"
+        "wall clock"
     ],
     "893": [
         "n04548362",
-        "washbasin, handbasin, washbowl, lavabo, wash-hand basin"
+        "wallet"
     ],
     "894": [
         "n04550184",
-        "washer, automatic washer, washing machine"
+        "wardrobe"
     ],
     "895": [
         "n04552348",
-        "water bottle"
+        "warplane"
     ],
     "896": [
         "n04553703",
-        "water jug"
+        "washbasin"
     ],
     "897": [
         "n04554684",
-        "water tower"
+        "washer"
     ],
     "898": [
         "n04557648",
-        "whiskey jug"
+        "water bottle"
     ],
     "899": [
         "n04560804",
-        "whistle"
+        "water jug"
     ],
     "900": [
         "n04562935",
-        "wig"
+        "water tower"
     ],
     "901": [
         "n04579145",
-        "Windsor tie"
+        "whiskey jug"
     ],
     "902": [
         "n04579432",
-        "wine bottle"
+        "whistle"
     ],
     "903": [
         "n04584207",
-        "wing"
+        "wig"
     ],
     "904": [
         "n04589890",
-        "wok"
+        "window screen"
     ],
     "905": [
         "n04590129",
-        "wooden spoon"
+        "window shade"
     ],
     "906": [
         "n04591157",
-        "wool, woolen, woollen"
+        "Windsor tie"
     ],
     "907": [
         "n04591713",
-        "worm fence, snake fence, snake-rail fence, Virginia fence"
+        "wine bottle"
     ],
     "908": [
         "n04592741",
-        "wreck"
+        "wing"
     ],
     "909": [
         "n04596742",
-        "yawl"
+        "wok"
     ],
     "910": [
         "n04597913",
-        "yurt"
+        "wooden spoon"
     ],
     "911": [
         "n04599235",
-        "web site, website, internet site, site"
+        "wool"
     ],
     "912": [
         "n04604644",
-        "comic book"
+        "worm fence"
     ],
     "913": [
         "n04606251",
-        "crossword puzzle, crossword"
+        "wreck"
     ],
     "914": [
         "n04612504",
-        "street sign"
+        "yawl"
     ],
     "915": [
         "n04613696",
-        "traffic light, traffic signal, stoplight"
+        "yurt"
     ],
     "916": [
         "n06359193",
-        "book jacket, dust cover, dust jacket, dust wrapper"
+        "web site"
     ],
     "917": [
         "n06596364",
-        "menu"
+        "comic book"
     ],
     "918": [
         "n06785654",
-        "plate"
+        "crossword puzzle"
     ],
     "919": [
         "n06794110",
-        "guacamole"
+        "street sign"
     ],
     "920": [
         "n06874185",
-        "consomme"
+        "traffic light"
     ],
     "921": [
         "n07248320",
-        "Unknown Class (n07248320)"
+        "book jacket"
     ],
     "922": [
         "n07565083",
-        "hot pot, hotpot"
+        "menu"
     ],
     "923": [
         "n07579787",
-        "trifle"
+        "plate"
     ],
     "924": [
         "n07583066",
-        "ice cream, icecream"
+        "guacamole"
     ],
     "925": [
         "n07584110",
-        "ice lolly, lolly, lollipop, popsicle"
+        "consomme"
     ],
     "926": [
         "n07590611",
-        "French loaf"
+        "hot pot"
     ],
     "927": [
         "n07613480",
-        "bagel, beigel"
+        "trifle"
     ],
     "928": [
         "n07614500",
-        "pretzel"
+        "ice cream"
     ],
     "929": [
         "n07615774",
-        "cheeseburger"
+        "ice lolly"
     ],
     "930": [
         "n07684084",
-        "hotdog, hot dog, red hot"
+        "French loaf"
     ],
     "931": [
         "n07693725",
-        "mashed potato"
+        "bagel"
     ],
     "932": [
         "n07695742",
-        "head cabbage"
+        "pretzel"
     ],
     "933": [
         "n07697313",
-        "broccoli"
+        "cheeseburger"
     ],
     "934": [
         "n07697537",
-        "cauliflower"
+        "hotdog"
     ],
     "935": [
         "n07711569",
-        "zucchini, courgette"
+        "mashed potato"
     ],
     "936": [
         "n07714571",
-        "spaghetti squash"
+        "head cabbage"
     ],
     "937": [
         "n07714990",
-        "acorn squash"
+        "broccoli"
     ],
     "938": [
         "n07715103",
-        "butternut squash"
+        "cauliflower"
     ],
     "939": [
         "n07716358",
-        "cucumber, cuke"
+        "zucchini"
     ],
     "940": [
         "n07716906",
-        "artichoke, globe artichoke"
+        "spaghetti squash"
     ],
     "941": [
         "n07717410",
-        "bell pepper"
+        "acorn squash"
     ],
     "942": [
         "n07717556",
-        "cardoon"
+        "butternut squash"
     ],
     "943": [
         "n07718472",
-        "mushroom"
+        "cucumber"
     ],
     "944": [
         "n07718747",
-        "Granny Smith"
+        "artichoke"
     ],
     "945": [
         "n07720875",
-        "strawberry"
+        "bell pepper"
     ],
     "946": [
         "n07730033",
-        "orange"
+        "cardoon"
     ],
     "947": [
         "n07734744",
-        "lemon"
+        "mushroom"
     ],
     "948": [
         "n07742313",
-        "fig"
+        "Granny Smith"
     ],
     "949": [
         "n07745940",
-        "pineapple, ananas"
+        "strawberry"
     ],
     "950": [
         "n07747607",
-        "banana"
+        "orange"
     ],
     "951": [
         "n07749582",
-        "jackfruit, jak, jack"
+        "lemon"
     ],
     "952": [
         "n07753113",
-        "custard apple"
+        "fig"
     ],
     "953": [
         "n07753275",
-        "pomegranate"
+        "pineapple"
     ],
     "954": [
         "n07753592",
-        "hay"
+        "banana"
     ],
     "955": [
         "n07754684",
-        "Unknown Class (n07754684)"
+        "jackfruit"
     ],
     "956": [
         "n07760859",
-        "Unknown Class (n07760859)"
+        "custard apple"
     ],
     "957": [
         "n07768694",
-        "chocolate sauce, chocolate syrup"
+        "pomegranate"
     ],
     "958": [
         "n07802026",
-        "dough"
+        "hay"
     ],
     "959": [
         "n07831146",
-        "meat loaf, meatloaf"
+        "carbonara"
     ],
     "960": [
         "n07836838",
-        "pizza, pizza pie"
+        "chocolate sauce"
     ],
     "961": [
         "n07860988",
-        "potpie"
+        "dough"
     ],
     "962": [
         "n07871810",
-        "burrito"
+        "meat loaf"
     ],
     "963": [
         "n07873807",
-        "red wine"
+        "pizza"
     ],
     "964": [
         "n07875152",
-        "espresso"
+        "potpie"
     ],
     "965": [
         "n07880968",
-        "cup"
+        "burrito"
     ],
     "966": [
         "n07892512",
-        "eggnog"
+        "red wine"
     ],
     "967": [
         "n07920052",
-        "alp"
+        "espresso"
     ],
     "968": [
         "n07930864",
-        "bubble"
+        "cup"
     ],
     "969": [
         "n07932039",
-        "cliff, drop, drop-off"
+        "eggnog"
     ],
     "970": [
         "n09193705",
-        "coral reef"
+        "alp"
     ],
     "971": [
         "n09229709",
-        "geyser"
+        "bubble"
     ],
     "972": [
         "n09246464",
-        "lakeside, lakeshore"
+        "cliff"
     ],
     "973": [
         "n09256479",
-        "promontory, headland, head, foreland"
+        "coral reef"
     ],
     "974": [
         "n09288635",
-        "sandbar, sand bar"
+        "geyser"
     ],
     "975": [
         "n09332890",
-        "seashore, coast, seacoast, sea-coast"
+        "lakeside"
     ],
     "976": [
         "n09399592",
-        "promontory, headland, head, foreland"
+        "promontory"
     ],
     "977": [
         "n09421951",
-        "sandbar, sand bar"
+        "sandbar"
     ],
     "978": [
         "n09428293",
-        "seashore, coast, seacoast, sea-coast"
+        "seashore"
     ],
     "979": [
         "n09468604",
-        "valley, vale"
+        "valley"
     ],
     "980": [
         "n09472597",
@@ -3925,11 +3925,11 @@
     ],
     "981": [
         "n09835506",
-        "ballplayer, baseball player"
+        "ballplayer"
     ],
     "982": [
         "n10148035",
-        "groom, bridegroom"
+        "groom"
     ],
     "983": [
         "n10565667",
@@ -3945,7 +3945,7 @@
     ],
     "986": [
         "n12057211",
-        "yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum"
+        "yellow lady's slipper"
     ],
     "987": [
         "n12144580",
@@ -3957,11 +3957,11 @@
     ],
     "989": [
         "n12620546",
-        "hip, rose hip, rosehip"
+        "hip"
     ],
     "990": [
         "n12768682",
-        "buckeye, horse chestnut, conker"
+        "buckeye"
     ],
     "991": [
         "n12985857",
@@ -3977,7 +3977,7 @@
     ],
     "994": [
         "n13040303",
-        "stinkhorn, carrion fungus"
+        "stinkhorn"
     ],
     "995": [
         "n13044778",
@@ -3985,7 +3985,7 @@
     ],
     "996": [
         "n13052670",
-        "hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa"
+        "hen-of-the-woods"
     ],
     "997": [
         "n13054560",
@@ -3993,10 +3993,10 @@
     ],
     "998": [
         "n13133613",
-        "ear, fungus ear, Auricularia auricula-judae"
+        "ear"
     ],
     "999": [
         "n15075141",
-        "Unknown Class (n15075141)"
+        "toilet tissue"
     ]
 }
