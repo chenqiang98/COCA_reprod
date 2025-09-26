@@ -1,0 +1,6 @@
+# Hugging Face Requirements for MiniImageNet-C
+huggingface_hub>=0.20.0
+datasets>=2.15.0
+Pillow>=9.0.0
+torch>=1.9.0
+torchvision>=0.10.0

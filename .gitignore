@@ -29,6 +29,9 @@ venv/
 data/*
 !data/*.py
 !data/*.sh
+!data/scripts
+!data/mini_imagenet_c
+!data/huggingface
 *.pth
 *.pt
 *.onnx
