@@ -36,7 +36,8 @@ def upload_dataset(
     if organization:
         full_repo_name = f"{organization}/{repo_name}"
     else:
-        full_repo_name = repo_name
+        user = "niuniandaji"
+        full_repo_name = f"{user}/{repo_name}"
     
     print(f"Creating repository: {full_repo_name}")
     
