@@ -27,7 +27,7 @@ def cls_decoder(key, data):
     except (ValueError, UnicodeDecodeError):
         return None
 
-class MiniImageNetCWebDataset(torch.utils.data.Dataset):
+class MiniImageNetCWebDataset(torch.utils.data.IterableDataset):
     """
     A PyTorch Dataset for the WebDataset version of MiniImageNet-C.
 
@@ -56,7 +56,7 @@ class MiniImageNetCWebDataset(torch.utils.data.Dataset):
             raise FileNotFoundError(f"No .tar shards found in {self.shard_path}")
 
         self.dataset = (
-            wds.WebDataset(shard_urls)
+            wds.WebDataset(shard_urls, shardshuffle=True)
             .decode(pil_decoder, cls_decoder)
             .to_tuple("jpg", "cls")
             .map(self.apply_transforms)
@@ -81,7 +81,7 @@ if __name__ == '__main__':
 
     # This assumes you have a 'mini-imagenet-c-webdataset' directory
     # created by the convert_to_webdataset.py script.
-    dataset_root = "~/repo/data/mini-imagenet-c-webdataset" 
+    dataset_root = "../data/mini-imagenet-c-webdataset" 
     if not Path(dataset_root).exists():
         print(f"\nERROR: Example dataset root '{dataset_root}' not found.")
         print("Please run 'python data/scripts/convert_to_webdataset.py' first.")
