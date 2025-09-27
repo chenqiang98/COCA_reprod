@@ -6,12 +6,13 @@ Upload script for MiniImageNet-C dataset to Hugging Face Hub
 import os
 import argparse
 from pathlib import Path
-from huggingface_hub import HfApi, create_repo, upload_folder
+from huggingface_hub import HfApi, create_repo, upload_folder, upload_file
 
 
 def upload_dataset(
     dataset_path: str,
     repo_name: str,
+    card_path: str = None,
     organization: str = None,
     private: bool = False,
     token: str = None
@@ -22,6 +23,7 @@ def upload_dataset(
     Args:
         dataset_path: Path to the generated MiniImageNet-C dataset
         repo_name: Name of the repository on Hugging Face
+        card_path: Path to the dataset card (README.md)
         organization: Optional organization name
         private: Whether to make the repository private
         token: Hugging Face token (if not provided, will use HF_TOKEN env var)
@@ -63,6 +65,22 @@ def upload_dataset(
             ignore_patterns=["*.pyc", "__pycache__", ".git", ".gitignore"]
         )
         
+        # Upload the dataset card if provided
+        if card_path:
+            card_p = Path(card_path)
+            if card_p.exists():
+                print(f"Uploading dataset card from {card_p}...")
+                upload_file(
+                    path_or_fileobj=card_p,
+                    path_in_repo="README.md",
+                    repo_id=full_repo_name,
+                    repo_type="dataset",
+                    token=token,
+                )
+                print("✓ Dataset card uploaded successfully!")
+            else:
+                print(f"Warning: Dataset card not found at {card_p}, skipping.")
+
         print(f"✓ Dataset uploaded successfully!")
         print(f"Dataset URL: https://huggingface.co/datasets/{full_repo_name}")
         
@@ -84,6 +102,12 @@ def main():
         type=str, 
         default="mini-imagenet-c",
         help="Repository name on Hugging Face (default: mini-imagenet-c)"
+    )
+    parser.add_argument(
+        "--card_path",
+        type=str,
+        default="data/README.md",
+        help="Path to the dataset card (README.md). Defaults to data/README.md"
     )
     parser.add_argument(
         "--organization", 
@@ -122,7 +146,8 @@ def main():
         repo_name=args.repo_name,
         organization=args.organization,
         private=args.private,
-        token=token
+        token=token,
+        card_path=args.card_path
     )
 
 
